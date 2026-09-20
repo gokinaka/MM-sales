@@ -5,6 +5,10 @@
 #   unverified  - 未確認。初回実行の _status.json で到達性を確認して修正すること
 #
 # strip_patterns: 毎回変化して無意味な差分を生む要素(日時表示など)を除去する正規表現。
+#
+# runner_blocked: true にすると GitHub Actions の実行(--mode=runner)から除外され、
+#   別経路の実行(--mode=blocked)だけが取得する。GitHub ランナーの IP から
+#   到達できないサイト向け。45秒×3回のリトライでも改善しないことを確認済み。
 
 defaults:
   user_agent: "MM-sales-calendar/1.0 (+https://github.com/gokinaka/MM-sales)"
@@ -38,6 +42,9 @@ shops:
   - id: montbell
     name: モンベル(MARK IS みなとみらい店ほか)
     area: みなとみらい
+    # GitHub ランナーからは ConnectTimeout。最も価値の高いソース
+    # (フレンドフェアの日程はここにしか出ない)なので別経路で取得する。
+    runner_blocked: true
     pages:
       - id: club-news
         url: https://club.montbell.jp/common/system/information/index.php?c=6
@@ -59,7 +66,10 @@ shops:
   - id: aporito-worldporters
     name: APORITO 横浜ワールドポーターズ
     area: みなとみらい
-    # プロキシ経由では 502 が続く。GitHub Actions ランナーからは通る可能性があるため有効のまま残す。
+    # GitHub ランナーからは ConnectionError、エージェントのプロキシ経由では 502。
+    # どちらの経路からも到達できず、データセンターIP全般を拒否していると推定。
+    # 毎日無駄に叩かないよう無効化する。別の到達経路を用意できたら戻す。
+    enabled: false
     pages:
       - id: shop
         url: https://sportsgear.rizap.jp/shop/aporito_yokohamawp/

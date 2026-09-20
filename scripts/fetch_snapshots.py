@@ -99,7 +99,23 @@ class RobotsCache:
         return parser.can_fetch(self.user_agent, url)
 
 
+def wanted(shop: dict, mode: str) -> bool:
+    if not shop.get("enabled", True):
+        return False
+    if mode == "all":
+        return True
+    blocked = shop.get("runner_blocked", False)
+    return blocked if mode == "blocked" else not blocked
+
+
 def main() -> int:
+    mode = "all"
+    if len(sys.argv) > 1:
+        mode = sys.argv[1].removeprefix("--mode=")
+        if mode not in ("all", "runner", "blocked"):
+            print(f"unknown mode: {mode}", file=sys.stderr)
+            return 2
+
     config = yaml.safe_load(CONFIG.read_text(encoding="utf-8"))
     defaults = config.get("defaults", {})
     user_agent = defaults.get("user_agent", "MM-sales-calendar/1.0")
@@ -115,7 +131,7 @@ def main() -> int:
     first_request = True
 
     for shop in config.get("shops", []):
-        if not shop.get("enabled", True):
+        if not wanted(shop, mode):
             continue
 
         strip_patterns = shop.get("strip_patterns", [])
@@ -155,23 +171,30 @@ def main() -> int:
             record["chars"] = len(text)
             results.append(record)
 
+    # runner モードと blocked モードは別の経路から別々に走るため、
+    # 自分が担当した分だけを差し替えて相手の結果を消さないようにする。
     SNAPSHOT_DIR.mkdir(parents=True, exist_ok=True)
+    status: dict = {}
+    if STATUS_FILE.exists():
+        try:
+            loaded = json.loads(STATUS_FILE.read_text(encoding="utf-8"))
+            if isinstance(loaded.get("runs"), dict):
+                status = loaded
+        except json.JSONDecodeError:
+            pass
+    status.setdefault("runs", {})
+    status["runs"][mode] = {
+        "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "results": results,
+    }
     STATUS_FILE.write_text(
-        json.dumps(
-            {
-                "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-                "results": results,
-            },
-            ensure_ascii=False,
-            indent=2,
-        )
-        + "\n",
+        json.dumps(status, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
         encoding="utf-8",
     )
 
     ok = sum(1 for r in results if r["result"] == "ok")
     changed = sum(1 for r in results if r.get("changed"))
-    print(f"{ok}/{len(results)} pages fetched, {changed} changed")
+    print(f"[{mode}] {ok}/{len(results)} pages fetched, {changed} changed")
     for record in results:
         if record["result"] != "ok":
             print(f"  FAILED {record['shop']}/{record['page']}: "
