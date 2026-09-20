@@ -1,0 +1,94 @@
+# みなとみらい・横浜駅周辺のアウトドア/スポーツ用品店 セール情報の取得元。
+#
+# url_status:
+#   confirmed   - 検索エンジンの結果に実在URLとして現れたもの
+#   unverified  - 未確認。初回実行の _status.json で到達性を確認して修正すること
+#
+# strip_patterns: 毎回変化して無意味な差分を生む要素(日時表示など)を除去する正規表現。
+
+defaults:
+  user_agent: "MM-sales-calendar/1.0 (+https://github.com/gokinaka/MM-sales)"
+  timeout_sec: 20
+  delay_sec: 3
+
+shops:
+  - id: kojitusanso-yokohama
+    name: 好日山荘 横浜西口店
+    area: 横浜駅
+    pages:
+      - id: sale
+        url: https://blog.kojitusanso.jp/yokohama/sale/
+        url_status: confirmed
+      - id: corporate
+        url: https://www.kojitusanso.jp/
+        url_status: confirmed
+
+  - id: ishii-yodobashi-yokohama
+    name: 石井スポーツ ヨドバシ横浜店
+    area: 横浜駅
+    pages:
+      - id: sale
+        url: https://www.ishii-sports.com/category/sale/
+        url_status: confirmed
+      - id: shop
+        url: https://www.ishii-sports.com/shop/yodobashiyokohama/
+        url_status: confirmed
+
+  - id: montbell
+    name: モンベル(MARK IS みなとみらい店ほか)
+    area: みなとみらい
+    pages:
+      - id: club-news
+        url: https://club.montbell.jp/common/system/information/index.php?c=6
+        url_status: confirmed
+
+  - id: kamoshika-yokohama
+    name: カモシカスポーツ 山の店・横浜店
+    area: 横浜駅
+    pages:
+      # category/sale はナビゲーションのみが返り記事一覧が入らない(JS描画と推定)。
+      # 実際の開催中/開催予定一覧は横浜店ページ側に入るので、そちらが主。
+      - id: sale
+        url: https://kamoshika.co.jp/category/sale
+        url_status: confirmed
+      - id: shop
+        url: https://kamoshika.co.jp/yokohama
+        url_status: confirmed
+
+  - id: aporito-worldporters
+    name: APORITO 横浜ワールドポーターズ
+    area: みなとみらい
+    # プロキシ経由では 502 が続く。GitHub Actions ランナーからは通る可能性があるため有効のまま残す。
+    pages:
+      - id: shop
+        url: https://sportsgear.rizap.jp/shop/aporito_yokohamawp/
+        url_status: confirmed
+
+  - id: markis-minatomirai
+    name: MARK IS みなとみらい(館内ショップニュース)
+    area: みなとみらい
+    pages:
+      - id: montbell-shop
+        url: https://www.mec-markis.jp/mm/shop/detail/?act=7918
+        url_status: confirmed
+
+  # --- 以下は店舗の実在・URLとも未確認。初回実行の結果を見て採否を決める ---
+
+  - id: sportsauthority-markis
+    name: スポーツオーソリティ MARK IS みなとみらい店
+    area: みなとみらい
+    note: 閉店情報と営業中情報が矛盾。実在を要確認。
+    enabled: false
+    pages:
+      - id: shop
+        url: https://www.sportsauthority.jp/
+        url_status: unverified
+
+  - id: xebio-minatomirai
+    name: スーパースポーツゼビオ みなとみらい東急スクエア店
+    area: みなとみらい
+    enabled: false
+    pages:
+      - id: shop
+        url: https://www.supersports.com/ja-jp/xebio
+        url_status: unverified

@@ -1,0 +1,60 @@
+{
+  "updated_at": "2026-09-20",
+  "schema_note": "confidence=confirmed は一次情報(店舗公式ページ)で開始日・終了日・年を確認済みのものだけ。年号が書かれていない告知は inferred 以下にし、推定根拠を note に書く。",
+  "events": [
+    {
+      "id": "montbell-friendfair-2026autumn-yokohama",
+      "shop_id": "montbell",
+      "title": "モンベルクラブ フレンドフェア2026秋 横浜",
+      "type": "event",
+      "start": "2026-10-03",
+      "end": "2026-10-04",
+      "area": "横浜",
+      "members_only": true,
+      "confidence": "confirmed",
+      "source_url": "https://club.montbell.jp/common/system/information/index.php?c=6",
+      "source_snapshot": "data/snapshots/montbell/club-news.txt",
+      "note": "2026/8/20付の新着情報に「横浜・大阪（10/3～4・10/31～11/1）」と記載。横浜が10/3-4。会員と同伴者のみ入場。アウトレットセールを併設。会場は未確認。"
+    },
+    {
+      "id": "montbell-orico-point-2026",
+      "shop_id": "montbell",
+      "title": "オリコカード利用100万ポイント山分けキャンペーン",
+      "type": "campaign",
+      "start": null,
+      "end": "2026-12-31",
+      "area": "全国",
+      "members_only": true,
+      "confidence": "confirmed",
+      "source_url": "https://club.montbell.jp/common/system/information/index.php?c=6",
+      "source_snapshot": "data/snapshots/montbell/club-news.txt",
+      "note": "2026/9/14付。終了日のみ明記、開始日は未確認。店舗セールではなくカード利用特典。"
+    }
+  ],
+  "known_recurring": [
+    {
+      "shop_id": "kojitusanso-yokohama",
+      "title": "会員限定 大感謝祭",
+      "typical_period": "11月上旬〜12月上旬",
+      "note": "2026年の日程は未告知。検索で出る「11月8日(金)〜12月1日(日)」は2026年11月8日が日曜のため別年(2024年と推定)。カレンダーに入れてはいけない。"
+    },
+    {
+      "shop_id": "kojitusanso-yokohama",
+      "title": "新春福袋 予約開始",
+      "typical_period": "12月中旬",
+      "note": "過去実績で12月12日開始の年がある。未確認。"
+    },
+    {
+      "shop_id": "ishii-yodobashi-yokohama",
+      "title": "会員限定 特別シーズンセール(冬) / 初売り / クリアランス",
+      "typical_period": "1月(初売り)・2月(冬)・3月末(クリアランス)・8〜9月(夏)",
+      "note": "10〜12月に大型セールを行う証拠は未発見。公式セール一覧は全店舗・複数年が年号なしで混在しており、店舗と年の特定が必須。"
+    },
+    {
+      "shop_id": "kamoshika-yokohama",
+      "title": "メンバーズバッグ会員限定 季節フェア",
+      "typical_period": "季節ごと(2026夏は6/19〜7/20)",
+      "note": "秋冬版は未告知。"
+    }
+  ]
+}
