@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-20T06:37:48+00:00",
+  "fetched_at": "2026-09-20T06:45:21+00:00",
   "results": [
     {
       "shop": "kojitusanso-yokohama",
@@ -7,7 +7,7 @@
       "url": "https://blog.kojitusanso.jp/yokohama/sale/",
       "http_status": 200,
       "result": "ok",
-      "changed": true,
+      "changed": false,
       "sha256": "f6a0681139807c8f",
       "chars": 13352
     },
@@ -17,7 +17,7 @@
       "url": "https://www.kojitusanso.jp/",
       "http_status": 200,
       "result": "ok",
-      "changed": true,
+      "changed": false,
       "sha256": "d2e056050184bf58",
       "chars": 6502
     },
@@ -27,7 +27,7 @@
       "url": "https://www.ishii-sports.com/category/sale/",
       "http_status": 200,
       "result": "ok",
-      "changed": true,
+      "changed": false,
       "sha256": "c4e11e197a2cf928",
       "chars": 6506
     },
@@ -37,7 +37,7 @@
       "url": "https://www.ishii-sports.com/shop/yodobashiyokohama/",
       "http_status": 200,
       "result": "ok",
-      "changed": true,
+      "changed": false,
       "sha256": "954120258c9771ad",
       "chars": 757
     },
@@ -45,11 +45,8 @@
       "shop": "montbell",
       "page": "club-news",
       "url": "https://club.montbell.jp/common/system/information/index.php?c=6",
-      "http_status": 200,
-      "result": "ok",
-      "changed": true,
-      "sha256": "2b72fa2ce3f0bf08",
-      "chars": 1688
+      "result": "error",
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='club.montbell.jp', port=443): Max retries exceeded with url: /common/system/information/index.php?c=6 (Caused by ConnectTimeoutError(<HTTPSConnection(host='club.montbell.jp', port=443) at 0x7ff71f45d2e0>, 'Connection to club.montbell.jp timed out. (connect timeout=20)'))"
     },
     {
       "shop": "kamoshika-yokohama",
@@ -57,7 +54,7 @@
       "url": "https://kamoshika.co.jp/category/sale",
       "http_status": 200,
       "result": "ok",
-      "changed": true,
+      "changed": false,
       "sha256": "70bbfe6e6739f4a8",
       "chars": 1154
     },
@@ -67,7 +64,7 @@
       "url": "https://kamoshika.co.jp/yokohama",
       "http_status": 200,
       "result": "ok",
-      "changed": true,
+      "changed": false,
       "sha256": "4a95e8aa71cfa6bc",
       "chars": 2802
     },
@@ -76,7 +73,7 @@
       "page": "shop",
       "url": "https://sportsgear.rizap.jp/shop/aporito_yokohamawp/",
       "result": "error",
-      "error": "ProxyError: HTTPSConnectionPool(host='sportsgear.rizap.jp', port=443): Max retries exceeded with url: /shop/aporito_yokohamawp/ (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 502 Bad Gateway')))"
+      "error": "ConnectionError: HTTPSConnectionPool(host='sportsgear.rizap.jp', port=443): Max retries exceeded with url: /shop/aporito_yokohamawp/ (Caused by NameResolutionError(\"HTTPSConnection(host='sportsgear.rizap.jp', port=443): Failed to resolve 'sportsgear.rizap.jp' ([Errno -5] No address associated with hostname)\"))"
     },
     {
       "shop": "markis-minatomirai",
@@ -84,7 +81,7 @@
       "url": "https://www.mec-markis.jp/mm/shop/detail/?act=7918",
       "http_status": 200,
       "result": "ok",
-      "changed": true,
+      "changed": false,
       "sha256": "6be395384755b6af",
       "chars": 1359
     }
