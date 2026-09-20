@@ -17,7 +17,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-09-20T07:02:16+00:00",
+      "fetched_at": "2026-09-20T20:30:52+00:00",
       "results": [
         {
           "attempts": 1,
@@ -32,12 +32,12 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 6502,
+          "changed": true,
+          "chars": 6487,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "d2e056050184bf58",
+          "sha256": "162103866a3464c8",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
@@ -76,12 +76,12 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 2802,
+          "changed": true,
+          "chars": 2772,
           "http_status": 200,
           "page": "shop",
           "result": "ok",
-          "sha256": "4a95e8aa71cfa6bc",
+          "sha256": "93469b65c602b2f0",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/yokohama"
         },
