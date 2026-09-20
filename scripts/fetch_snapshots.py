@@ -46,6 +46,34 @@ def extract_text(html: str, strip_patterns: list[str]) -> str:
     return text.strip() + "\n"
 
 
+def fetch(session, url: str, timeout: int, retries: int, record: dict):
+    """一時的な失敗を再試行する。GitHub Actions のランナーからは接続が
+    落とされる、または極端に遅いサイトがあるため、諦める前に数回待つ。"""
+    delay = 2
+    for attempt in range(1, retries + 1):
+        last = attempt == retries
+        record["attempts"] = attempt
+        try:
+            response = session.get(url, timeout=timeout)
+        except requests.RequestException:
+            if last:
+                raise
+            time.sleep(delay)
+            delay *= 2
+            continue
+
+        record["http_status"] = response.status_code
+        if response.status_code < 400:
+            return response
+        # 4xx はサイト側の確定的な応答なので即座に諦める。HTTPError を上の
+        # except の外で投げるのは、それが RequestException を継承しており
+        # 内側で捕まると再試行に回ってしまうため。
+        if response.status_code < 500 or last:
+            response.raise_for_status()
+        time.sleep(delay)
+        delay *= 2
+
+
 class RobotsCache:
     """ホストごとの robots.txt 判定。取得できない場合は許可として扱う。"""
 
@@ -77,6 +105,7 @@ def main() -> int:
     user_agent = defaults.get("user_agent", "MM-sales-calendar/1.0")
     timeout = defaults.get("timeout_sec", 20)
     delay = defaults.get("delay_sec", 3)
+    retries = defaults.get("retries", 3)
 
     robots = RobotsCache(user_agent)
     session = requests.Session()
@@ -106,9 +135,7 @@ def main() -> int:
                 continue
 
             try:
-                response = session.get(url, timeout=timeout)
-                record["http_status"] = response.status_code
-                response.raise_for_status()
+                response = fetch(session, url, timeout, retries, record)
                 response.encoding = response.apparent_encoding or response.encoding
                 text = extract_text(response.text, strip_patterns)
             except Exception as exc:

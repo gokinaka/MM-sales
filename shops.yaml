@@ -8,8 +8,9 @@
 
 defaults:
   user_agent: "MM-sales-calendar/1.0 (+https://github.com/gokinaka/MM-sales)"
-  timeout_sec: 20
+  timeout_sec: 45
   delay_sec: 3
+  retries: 3
 
 shops:
   - id: kojitusanso-yokohama
