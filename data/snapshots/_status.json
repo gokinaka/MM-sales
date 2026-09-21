@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-09-21T07:36:22+00:00",
+      "fetched_at": "2026-09-21T21:50:53+00:00",
       "results": [
         {
           "attempts": 1,
@@ -43,23 +43,23 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 6487,
+          "changed": true,
+          "chars": 6468,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "162103866a3464c8",
+          "sha256": "5875451f3455822e",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 6506,
+          "changed": true,
+          "chars": 6559,
           "http_status": 200,
           "page": "sale",
           "result": "ok",
-          "sha256": "c4e11e197a2cf928",
+          "sha256": "8e8a50843f858c32",
           "shop": "ishii-yodobashi-yokohama",
           "url": "https://www.ishii-sports.com/category/sale/"
         },
@@ -98,12 +98,12 @@
         },
         {
           "attempts": 1,
-          "changed": false,
+          "changed": true,
           "chars": 1359,
           "http_status": 200,
           "page": "montbell-shop",
           "result": "ok",
-          "sha256": "6be395384755b6af",
+          "sha256": "9e4186c1f15102ca",
           "shop": "markis-minatomirai",
           "url": "https://www.mec-markis.jp/mm/shop/detail/?act=7918"
         },
@@ -131,12 +131,12 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 7197,
+          "changed": true,
+          "chars": 7297,
           "http_status": 200,
           "page": "top",
           "result": "ok",
-          "sha256": "a97c3adf7f92c668",
+          "sha256": "06d35600cb673992",
           "shop": "gregory",
           "url": "https://www.gregory.jp/"
         },
@@ -153,12 +153,12 @@
         },
         {
           "changed": true,
-          "chars": 4183,
+          "chars": 4143,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "d3b2737434aca15b",
+          "sha256": "388cacb0812c2e21",
           "shop": "thenorthface",
           "url": "https://www.thenorthface.jp/"
         },
@@ -174,13 +174,13 @@
           "url": "https://www.arcteryx.jp/"
         },
         {
-          "changed": false,
-          "chars": 7222,
+          "changed": true,
+          "chars": 7188,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "bbd8804559fe4921",
+          "sha256": "d7d4ea31dcb01262",
           "shop": "columbia",
           "url": "https://www.columbiasports.co.jp/"
         },
