@@ -1,5 +1,32 @@
 {
   "runs": {
+    "blocked": {
+      "fetched_at": "2026-09-21T07:39:51+00:00",
+      "results": [
+        {
+          "attempts": 1,
+          "changed": false,
+          "chars": 928,
+          "http_status": 200,
+          "page": "top",
+          "result": "ok",
+          "sha256": "000d30cefb64b753",
+          "shop": "montbell",
+          "url": "https://www.montbell.jp/"
+        },
+        {
+          "attempts": 1,
+          "changed": false,
+          "chars": 1688,
+          "http_status": 200,
+          "page": "club-news",
+          "result": "ok",
+          "sha256": "2b72fa2ce3f0bf08",
+          "shop": "montbell",
+          "url": "https://club.montbell.jp/common/system/information/index.php?c=6"
+        }
+      ]
+    },
     "runner": {
       "fetched_at": "2026-09-21T07:36:22+00:00",
       "results": [
