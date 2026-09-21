@@ -99,12 +99,13 @@ class RobotsCache:
         return parser.can_fetch(self.user_agent, url)
 
 
-def wanted(shop: dict, mode: str) -> bool:
-    if not shop.get("enabled", True):
+def wanted(shop: dict, page: dict, mode: str) -> bool:
+    if not shop.get("enabled", True) or not page.get("enabled", True):
         return False
     if mode == "all":
         return True
-    blocked = shop.get("runner_blocked", False)
+    # 遮断はホスト単位で起きるので、同じ店舗でもページごとに経路が分かれる。
+    blocked = page.get("runner_blocked", shop.get("runner_blocked", False))
     return blocked if mode == "blocked" else not blocked
 
 
@@ -131,13 +132,13 @@ def main() -> int:
     first_request = True
 
     for shop in config.get("shops", []):
-        if not wanted(shop, mode):
-            continue
-
         strip_patterns = shop.get("strip_patterns", [])
         shop_dir = SNAPSHOT_DIR / shop["id"]
 
         for page in shop.get("pages", []):
+            if not wanted(shop, page, mode):
+                continue
+
             url = page["url"]
             record = {"shop": shop["id"], "page": page["id"], "url": url}
 

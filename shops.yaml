@@ -42,13 +42,18 @@ shops:
   - id: montbell
     name: モンベル(MARK IS みなとみらい店ほか)
     area: みなとみらい
-    # GitHub ランナーからは ConnectTimeout。最も価値の高いソース
-    # (フレンドフェアの日程はここにしか出ない)なので別経路で取得する。
-    runner_blocked: true
     pages:
+      # トップページに現在のキャンペーン・お知らせのリンクが並ぶ。
+      # club.montbell.jp とは別ホストなので、ランナーから到達できる見込み。
+      - id: top
+        url: https://www.montbell.jp/
+        url_status: confirmed
+      # 日付付きのニュース一覧。フレンドフェアの日程が出た唯一のソースだが、
+      # GitHub ランナーからは ConnectTimeout(45秒×3回でも改善せず)。
       - id: club-news
         url: https://club.montbell.jp/common/system/information/index.php?c=6
         url_status: confirmed
+        runner_blocked: true
 
   - id: kamoshika-yokohama
     name: カモシカスポーツ 山の店・横浜店
