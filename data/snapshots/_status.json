@@ -17,7 +17,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-09-21T05:48:45+00:00",
+      "fetched_at": "2026-09-21T05:55:11+00:00",
       "results": [
         {
           "attempts": 1,
@@ -64,13 +64,10 @@
           "url": "https://www.ishii-sports.com/shop/yodobashiyokohama/"
         },
         {
-          "attempts": 1,
-          "changed": true,
-          "chars": 928,
-          "http_status": 200,
+          "attempts": 3,
+          "error": "ConnectTimeout: HTTPSConnectionPool(host='www.montbell.jp', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.montbell.jp', port=443) at 0x7f0a33893830>, 'Connection to www.montbell.jp timed out. (connect timeout=45)'))",
           "page": "top",
-          "result": "ok",
-          "sha256": "000d30cefb64b753",
+          "result": "error",
           "shop": "montbell",
           "url": "https://www.montbell.jp/"
         },
