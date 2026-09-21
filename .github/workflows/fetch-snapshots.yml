@@ -27,6 +27,19 @@ jobs:
 
       - run: pip install -r scripts/requirements.txt
 
+      # JS 描画のサイト向け。ブラウザ本体はキャッシュして毎回落とさない。
+      - uses: actions/cache@v4
+        id: pw-cache
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('scripts/requirements.txt') }}
+
+      - run: python -m playwright install --with-deps chromium
+        if: steps.pw-cache.outputs.cache-hit != 'true'
+
+      - run: python -m playwright install-deps chromium
+        if: steps.pw-cache.outputs.cache-hit == 'true'
+
       # runner_blocked の店舗は GitHub の IP から到達できないので除外する。
       # それらは週次の抽出タスク側が --mode=blocked で取得する。
       - run: python scripts/fetch_snapshots.py --mode=runner

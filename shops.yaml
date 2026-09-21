@@ -9,6 +9,10 @@
 # runner_blocked: true にすると GitHub Actions の実行(--mode=runner)から除外され、
 #   別経路の実行(--mode=blocked)だけが取得する。GitHub ランナーの IP から
 #   到達できないサイト向け。45秒×3回のリトライでも改善しないことを確認済み。
+#
+# render: true にするとヘッドレスブラウザで描画してから本文を取る。
+#   JavaScript でページを組み立てるサイト向け。素の HTTP より遅いので、
+#   本文が返らないことを確認したページにだけ付ける。
 
 defaults:
   user_agent: "MM-sales-calendar/1.0 (+https://github.com/gokinaka/MM-sales)"
@@ -119,20 +123,20 @@ shops:
         url: https://www.snowpeak.co.jp/news/
         url_status: confirmed
 
-  # --- 以下は取得不可。理由を残して無効化する ---
+  # --- ここから下は 2026-09-21 に個別検証したブランド店 ---
   #
-  # 2026-09-21 に実地検証した結果:
-  #   パタゴニア      … patagonia.jp が仮想待合室(bot対策)を返し、全URLで同一の
-  #                     "Hang Tight!" ページになる。取得不可。直営店は中区関内。
-  #   ヘリーハンセン  … helly-hansen.jp は接続不可、goldwin.co.jp/hh/ は HTTP 500。
-  #   ノースフェイス  … goldwin.co.jp/tnf/whatsnew/ は 2.6KB、thenorthface.jp は 1.7KB。
-  #   アークテリクス  … arcteryx.jp は SPA。想定パスはいずれも 404。
-  #   コロンビア      … columbiasports.co.jp は 5.4KB でセール記述ほぼ無し。
-  #   KEEN            … keenfootwear.jp は Shopify の SPA で 2.3KB。
-  # いずれも JavaScript 描画のため、ヘッドレスブラウザを導入しない限り取れない。
+  # 素の HTTP 取得では、いずれも本文が数KBしか返らなかった:
+  #   ノースフェイス 2.6KB / アークテリクス SPA(想定パスは404) /
+  #   コロンビア 5.4KB / KEEN 2.3KB(Shopify の SPA)
+  # 原因は JavaScript 描画なので render: true で取得する。
+  #
+  # 取得不可として無効のままにするもの:
+  #   パタゴニア     … patagonia.jp が仮想待合室(bot対策)を返し、全URLで同一の
+  #                    "Hang Tight!" ページになる。描画しても中身が出ない。
+  #   ヘリーハンセン … helly-hansen.jp は接続不可、goldwin.co.jp/hh/ は HTTP 500。
   #
   # なお MARK IS 館のニュースAPI(event_list.php)も全343記事/70店舗を走査したが、
-  # 上記ブランドの記事は 0 件だった。館経由では代替できない。
+  # これらのブランドの記事は 0 件だった。館経由では代替できない。
 
   - id: patagonia-kannai
     name: パタゴニア 横浜・関内
@@ -146,7 +150,7 @@ shops:
   - id: thenorthface
     name: ザ・ノース・フェイス MARK IS みなとみらい
     area: みなとみらい
-    enabled: false
+    render: true
     pages:
       - id: whatsnew
         url: https://www.goldwin.co.jp/tnf/whatsnew/
@@ -155,7 +159,7 @@ shops:
   - id: arcteryx
     name: アークテリクス MARK IS みなとみらい
     area: みなとみらい
-    enabled: false
+    render: true
     pages:
       - id: top
         url: https://www.arcteryx.jp/
@@ -164,7 +168,7 @@ shops:
   - id: columbia
     name: コロンビア MARK IS みなとみらい
     area: みなとみらい
-    enabled: false
+    render: true
     pages:
       - id: top
         url: https://www.columbiasports.co.jp/
@@ -182,7 +186,7 @@ shops:
   - id: keen-garage-yokohama
     name: KEEN GARAGE 横浜(MARK IS 1F)
     area: みなとみらい
-    enabled: false
+    render: true
     pages:
       - id: store
         url: https://www.keenfootwear.jp/pages/keen-garages/keen-garage-yokohama

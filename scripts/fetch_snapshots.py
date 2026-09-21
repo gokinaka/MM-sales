@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import re
 import sys
 import time
@@ -74,6 +75,46 @@ def fetch(session, url: str, timeout: int, retries: int, record: dict):
         delay *= 2
 
 
+class Renderer:
+    """JavaScript でページを組み立てるサイト向けに、ヘッドレスブラウザで
+    描画後の HTML を返す。ブラウザの起動は高価なので、render を要求する
+    ページが実際に現れるまで立ち上げない。"""
+
+    def __init__(self, user_agent: str, timeout: int) -> None:
+        self.user_agent = user_agent
+        self.timeout_ms = timeout * 1000
+        self._pw = None
+        self._browser = None
+
+    def _browser_or_start(self):
+        if self._browser is None:
+            from playwright.sync_api import sync_playwright
+
+            self._pw = sync_playwright().start()
+            # ブラウザを同梱済みでダウンロードできない環境向けの逃げ道。
+            self._browser = self._pw.chromium.launch(
+                executable_path=os.environ.get("CHROMIUM_EXECUTABLE") or None
+            )
+        return self._browser
+
+    def html(self, url: str) -> tuple[int, str]:
+        ctx = self._browser_or_start().new_context(user_agent=self.user_agent)
+        try:
+            page = ctx.new_page()
+            response = page.goto(url, wait_until="networkidle", timeout=self.timeout_ms)
+            # networkidle の後も遅れて差し込まれる要素があるので少し待つ。
+            page.wait_for_timeout(2000)
+            return (response.status if response else 0), page.content()
+        finally:
+            ctx.close()
+
+    def close(self) -> None:
+        if self._browser is not None:
+            self._browser.close()
+            self._pw.stop()
+            self._browser = self._pw = None
+
+
 class RobotsCache:
     """ホストごとの robots.txt 判定。取得できない場合は許可として扱う。"""
 
@@ -125,6 +166,7 @@ def main() -> int:
     retries = defaults.get("retries", 3)
 
     robots = RobotsCache(user_agent)
+    renderer = Renderer(user_agent, timeout)
     session = requests.Session()
     session.headers["User-Agent"] = user_agent
 
@@ -152,9 +194,17 @@ def main() -> int:
                 continue
 
             try:
-                response = fetch(session, url, timeout, retries, record)
-                response.encoding = response.apparent_encoding or response.encoding
-                text = extract_text(response.text, strip_patterns)
+                if page.get("render", shop.get("render", False)):
+                    record["rendered"] = True
+                    status, html = renderer.html(url)
+                    record["http_status"] = status
+                    if status >= 400:
+                        raise RuntimeError(f"HTTP {status}")
+                else:
+                    response = fetch(session, url, timeout, retries, record)
+                    response.encoding = response.apparent_encoding or response.encoding
+                    html = response.text
+                text = extract_text(html, strip_patterns)
             except Exception as exc:
                 record["result"] = "error"
                 record["error"] = f"{type(exc).__name__}: {exc}"
@@ -171,6 +221,8 @@ def main() -> int:
             record["sha256"] = hashlib.sha256(text.encode("utf-8")).hexdigest()[:16]
             record["chars"] = len(text)
             results.append(record)
+
+    renderer.close()
 
     # runner モードと blocked モードは別の経路から別々に走るため、
     # 自分が担当した分だけを差し替えて相手の結果を消さないようにする。
