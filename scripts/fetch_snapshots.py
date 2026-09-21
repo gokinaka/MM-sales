@@ -101,8 +101,16 @@ class Renderer:
         ctx = self._browser_or_start().new_context(user_agent=self.user_agent)
         try:
             page = ctx.new_page()
-            response = page.goto(url, wait_until="networkidle", timeout=self.timeout_ms)
-            # networkidle の後も遅れて差し込まれる要素があるので少し待つ。
+            # networkidle を到達条件にすると、計測タグを鳴らし続けるサイトでは
+            # 永久に満たされず丸ごと失敗する。到達を待つのは DOM までにして、
+            # 静定は best-effort で待つ。
+            response = page.goto(
+                url, wait_until="domcontentloaded", timeout=self.timeout_ms
+            )
+            try:
+                page.wait_for_load_state("networkidle", timeout=15000)
+            except Exception:
+                pass
             page.wait_for_timeout(2000)
             return (response.status if response else 0), page.content()
         finally:

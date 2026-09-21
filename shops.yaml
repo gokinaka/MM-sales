@@ -48,10 +48,12 @@ shops:
     area: みなとみらい
     pages:
       # トップページに現在のキャンペーン・お知らせのリンクが並ぶ。
-      # club.montbell.jp とは別ホストなので、ランナーから到達できる見込み。
+      # www は一度はランナーから取得できたが、その後 ConnectTimeout に転じた。
+      # montbell.jp は断続的にランナーIPを弾くので、確実な別経路に寄せる。
       - id: top
         url: https://www.montbell.jp/
         url_status: confirmed
+        runner_blocked: true
       # 日付付きのニュース一覧。フレンドフェアの日程が出た唯一のソースだが、
       # GitHub ランナーからは ConnectTimeout(45秒×3回でも改善せず)。
       - id: club-news
@@ -133,7 +135,8 @@ shops:
   # 取得不可として無効のままにするもの:
   #   パタゴニア     … patagonia.jp が仮想待合室(bot対策)を返し、全URLで同一の
   #                    "Hang Tight!" ページになる。描画しても中身が出ない。
-  #   ヘリーハンセン … helly-hansen.jp は接続不可、goldwin.co.jp/hh/ は HTTP 500。
+  #   ヘリーハンセン … helly-hansen.jp は接続不可、goldwin.co.jp/hh/ は HTTP 500、
+  #                    さらに goldwin.co.jp の robots.txt が /hellyhansen/ を拒否。
   #
   # なお MARK IS 館のニュースAPI(event_list.php)も全343記事/70店舗を走査したが、
   # これらのブランドの記事は 0 件だった。館経由では代替できない。
@@ -152,8 +155,10 @@ shops:
     area: みなとみらい
     render: true
     pages:
-      - id: whatsnew
-        url: https://www.goldwin.co.jp/tnf/whatsnew/
+      # goldwin.co.jp は robots.txt で /tnf/ を明示的に拒否しているため使わない
+      # (同じ理由で /hellyhansen/ も不可)。ブランドサイト側は許可されている。
+      - id: top
+        url: https://www.thenorthface.jp/
         url_status: confirmed
 
   - id: arcteryx
