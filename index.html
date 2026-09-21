@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>横浜アウトドアセール暦</title>
+<meta name="description" content="みなとみらい・横浜駅周辺のアウトドア/スポーツ用品店のセール日程">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%232f6f5e'/%3E%3Cpath d='M3 6h10M5.5 3v2M10.5 3v2' stroke='%23fff' stroke-width='1.2' fill='none'/%3E%3C/svg%3E">
+<style>
+:root {
+  --bg: #fbfaf8;
+  --surface: #ffffff;
+  --border: #e4e0d9;
+  --text: #24211d;
+  --muted: #6f6a62;
+  --faint: #9a948b;
+  --accent: #2f6f5e;
+  --accent-soft: #e4efeb;
+  --warn: #8a6a1f;
+  --warn-soft: #f6eed8;
+  --today: #b4432f;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #17171a;
+    --surface: #1f1f23;
+    --border: #34343a;
+    --text: #e9e7e3;
+    --muted: #a5a098;
+    --faint: #76716a;
+    --accent: #6fbfa5;
+    --accent-soft: #24352f;
+    --warn: #d6b463;
+    --warn-soft: #342d1a;
+    --today: #e08a72;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #17171a;
+  --surface: #1f1f23;
+  --border: #34343a;
+  --text: #e9e7e3;
+  --muted: #a5a098;
+  --faint: #76716a;
+  --accent: #6fbfa5;
+  --accent-soft: #24352f;
+  --warn: #d6b463;
+  --warn-soft: #342d1a;
+  --today: #e08a72;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 24px 16px 64px; }
+header { margin-bottom: 28px; }
+h1 { font-size: 1.35rem; margin: 0 0 6px; letter-spacing: .01em; }
+.sub { color: var(--muted); font-size: .85rem; margin: 0; }
+h2 {
+  font-size: .8rem; text-transform: uppercase; letter-spacing: .08em;
+  color: var(--muted); margin: 32px 0 12px; font-weight: 600;
+}
+.card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 10px; padding: 14px 16px; margin-bottom: 10px;
+}
+.card-title { font-weight: 600; margin: 0 0 4px; }
+.card-meta { color: var(--muted); font-size: .85rem; margin: 0; }
+.card-note { color: var(--faint); font-size: .8rem; margin: 8px 0 0; }
+.badge {
+  display: inline-block; font-size: .7rem; padding: 1px 7px; border-radius: 99px;
+  vertical-align: middle; margin-left: 6px; font-weight: 600; letter-spacing: .02em;
+}
+.badge.confirmed { background: var(--accent-soft); color: var(--accent); }
+.badge.inferred { background: var(--warn-soft); color: var(--warn); }
+.badge.members { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+.month { margin-bottom: 24px; }
+.month-name { font-size: 1rem; font-weight: 600; margin: 0 0 8px; }
+.grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; }
+.dow {
+  text-align: center; font-size: .7rem; color: var(--faint);
+  padding-bottom: 4px;
+}
+.dow.sat { color: #4a7fa8; }
+.dow.sun { color: #b4432f; }
+.day {
+  aspect-ratio: 1; border: 1px solid var(--border); border-radius: 6px;
+  background: var(--surface); padding: 3px; font-size: .72rem;
+  color: var(--muted); position: relative; overflow: hidden;
+}
+.day.blank { border: none; background: none; }
+.day.has-event { background: var(--accent-soft); border-color: var(--accent); }
+.day.is-today { outline: 2px solid var(--today); outline-offset: -2px; }
+.day .n { font-variant-numeric: tabular-nums; }
+.dot {
+  position: absolute; bottom: 4px; left: 50%; transform: translateX(-50%);
+  width: 5px; height: 5px; border-radius: 50%; background: var(--accent);
+}
+.legend { color: var(--faint); font-size: .78rem; margin-top: 8px; }
+.empty { color: var(--faint); font-size: .85rem; font-style: normal; }
+a { color: var(--accent); }
+footer { margin-top: 40px; color: var(--faint); font-size: .78rem; border-top: 1px solid var(--border); padding-top: 16px; }
+footer p { margin: 4px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>横浜アウトドアセール暦</h1>
+    <p class="sub" id="freshness">読み込み中…</p>
+  </header>
+  <main id="main"></main>
+  <footer>
+    <p>各店公式ページのスナップショットから抽出。<span class="badge confirmed">確定</span> は開始日・終了日・年・対象店舗すべてを一次情報で確認したもの。<span class="badge inferred">推定</span> は不足があるもの。</p>
+    <p>「例年の傾向」は日程が未告知の項目です。カレンダーには載せていません。</p>
+  </footer>
+</div>
+<script>
+const DOW = ["日", "月", "火", "水", "木", "金", "土"];
+// 3ヶ月先までを見るには、今月を含めて4つの月にまたがる。
+const MONTHS_SHOWN = 4;
+const LONG_RUN_DAYS = 31;
+
+function parseDate(s) {
+  if (!s) return null;
+  const [y, m, d] = s.split("-").map(Number);
+  return new Date(y, m - 1, d);
+}
+function fmt(d) {
+  return `${d.getMonth() + 1}月${d.getDate()}日(${DOW[d.getDay()]})`;
+}
+function dayCount(a, b) {
+  return Math.round((b - a) / 86400000) + 1;
+}
+function el(tag, cls, text) {
+  const n = document.createElement(tag);
+  if (cls) n.className = cls;
+  if (text != null) n.textContent = text;
+  return n;
+}
+function badges(ev) {
+  const frag = document.createDocumentFragment();
+  frag.append(el("span", `badge ${ev.confidence === "confirmed" ? "confirmed" : "inferred"}`,
+    ev.confidence === "confirmed" ? "確定" : "推定"));
+  if (ev.members_only) frag.append(el("span", "badge members", "会員限定"));
+  return frag;
+}
+function periodLabel(start, end) {
+  if (start && end) return start.getTime() === end.getTime() ? fmt(start) : `${fmt(start)} 〜 ${fmt(end)}`;
+  if (end) return `${fmt(end)} まで`;
+  if (start) return `${fmt(start)} から`;
+  return "期間不明";
+}
+function eventCard(ev, start, end) {
+  const card = el("div", "card");
+  const title = el("p", "card-title", ev.title);
+  title.append(badges(ev));
+  card.append(title);
+  const bits = [periodLabel(start, end)];
+  if (ev.area) bits.push(ev.area);
+  card.append(el("p", "card-meta", bits.join(" ・ ")));
+  if (ev.note) card.append(el("p", "card-note", ev.note));
+  if (ev.source_url) {
+    const p = el("p", "card-note");
+    const a = el("a", null, "出典ページ");
+    a.href = ev.source_url;
+    a.rel = "noopener noreferrer";
+    a.target = "_blank";
+    p.append(a);
+    card.append(p);
+  }
+  return card;
+}
+function monthBlock(year, month, dated, today) {
+  const block = el("section", "month");
+  block.append(el("p", "month-name", `${year}年${month + 1}月`));
+  const grid = el("div", "grid");
+  DOW.forEach((d, i) => {
+    grid.append(el("div", `dow${i === 0 ? " sun" : i === 6 ? " sat" : ""}`, d));
+  });
+  const first = new Date(year, month, 1);
+  const total = new Date(year, month + 1, 0).getDate();
+  for (let i = 0; i < first.getDay(); i++) grid.append(el("div", "day blank"));
+  for (let d = 1; d <= total; d++) {
+    const date = new Date(year, month, d);
+    const hits = dated.filter(([, s, e]) => date >= s && date <= e);
+    const cell = el("div", `day${hits.length ? " has-event" : ""}`);
+    if (date.getTime() === today.getTime()) cell.classList.add("is-today");
+    cell.append(el("span", "n", String(d)));
+    if (hits.length) {
+      cell.append(el("span", "dot"));
+      cell.title = hits.map(([ev]) => ev.title).join(" / ");
+    }
+    grid.append(cell);
+  }
+  block.append(grid);
+  const inMonth = dated.filter(([, s, e]) =>
+    (s.getFullYear() === year && s.getMonth() === month) ||
+    (e.getFullYear() === year && e.getMonth() === month));
+  if (inMonth.length) {
+    inMonth.forEach(([ev, s, e]) => block.append(eventCard(ev, s, e)));
+  } else {
+    block.append(el("p", "empty", "告知されたセールはまだありません。"));
+  }
+  return block;
+}
+function render(data) {
+  const main = document.getElementById("main");
+  const now = new Date();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+  document.getElementById("freshness").textContent =
+    `みなとみらい・横浜駅周辺の登山/キャンプ/スポーツ用品店 ・ データ更新 ${data.updated_at}`;
+
+  const parsed = (data.events || []).map(ev => [ev, parseDate(ev.start), parseDate(ev.end)]);
+  const dated = parsed.filter(([, s, e]) => s && e && dayCount(s, e) <= LONG_RUN_DAYS);
+  const running = parsed.filter(([, s, e]) => !(s && e && dayCount(s, e) <= LONG_RUN_DAYS));
+
+  if (running.length) {
+    main.append(el("h2", null, "期間中のキャンペーン"));
+    running.forEach(([ev, s, e]) => main.append(eventCard(ev, s, e)));
+  }
+
+  main.append(el("h2", null, "今後3ヶ月"));
+  for (let i = 0; i < MONTHS_SHOWN; i++) {
+    const d = new Date(today.getFullYear(), today.getMonth() + i, 1);
+    main.append(monthBlock(d.getFullYear(), d.getMonth(), dated, today));
+  }
+
+  if ((data.known_recurring || []).length) {
+    main.append(el("h2", null, "例年の傾向(日程未告知)"));
+    data.known_recurring.forEach(r => {
+      const card = el("div", "card");
+      card.append(el("p", "card-title", r.title));
+      card.append(el("p", "card-meta", r.typical_period));
+      if (r.note) card.append(el("p", "card-note", r.note));
+      main.append(card);
+    });
+  }
+}
+fetch("data/sales.json", { cache: "no-store" })
+  .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+  .then(render)
+  .catch(err => {
+    document.getElementById("freshness").textContent = "データを読み込めませんでした";
+    document.getElementById("main").append(el("p", "empty", `data/sales.json: ${err.message}`));
+  });
+</script>
+</body>
+</html>
