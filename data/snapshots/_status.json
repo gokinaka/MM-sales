@@ -17,7 +17,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-09-21T06:36:45+00:00",
+      "fetched_at": "2026-09-21T06:42:48+00:00",
       "results": [
         {
           "attempts": 1,
@@ -62,14 +62,6 @@
           "sha256": "954120258c9771ad",
           "shop": "ishii-yodobashi-yokohama",
           "url": "https://www.ishii-sports.com/shop/yodobashiyokohama/"
-        },
-        {
-          "attempts": 3,
-          "error": "ConnectTimeout: HTTPSConnectionPool(host='www.montbell.jp', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.montbell.jp', port=443) at 0x7fea18f5fb00>, 'Connection to www.montbell.jp timed out. (connect timeout=45)'))",
-          "page": "top",
-          "result": "error",
-          "shop": "montbell",
-          "url": "https://www.montbell.jp/"
         },
         {
           "attempts": 1,
@@ -149,21 +141,29 @@
           "url": "https://www.snowpeak.co.jp/news/"
         },
         {
-          "page": "whatsnew",
-          "result": "robots_disallowed",
-          "shop": "thenorthface",
-          "url": "https://www.goldwin.co.jp/tnf/whatsnew/"
-        },
-        {
-          "error": "TimeoutError: Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.arcteryx.jp/\", waiting until \"networkidle\"\n",
+          "changed": true,
+          "chars": 4183,
+          "http_status": 200,
           "page": "top",
           "rendered": true,
-          "result": "error",
+          "result": "ok",
+          "sha256": "03aa8045a3194bea",
+          "shop": "thenorthface",
+          "url": "https://www.thenorthface.jp/"
+        },
+        {
+          "changed": true,
+          "chars": 4893,
+          "http_status": 200,
+          "page": "top",
+          "rendered": true,
+          "result": "ok",
+          "sha256": "b007c96022d238d8",
           "shop": "arcteryx",
           "url": "https://www.arcteryx.jp/"
         },
         {
-          "changed": true,
+          "changed": false,
           "chars": 7222,
           "http_status": 200,
           "page": "top",
@@ -174,10 +174,13 @@
           "url": "https://www.columbiasports.co.jp/"
         },
         {
-          "error": "TimeoutError: Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.keenfootwear.jp/pages/keen-garages/keen-garage-yokohama\", waiting until \"networkidle\"\n",
+          "changed": true,
+          "chars": 2351,
+          "http_status": 200,
           "page": "store",
           "rendered": true,
-          "result": "error",
+          "result": "ok",
+          "sha256": "b4edfff4f63478cc",
           "shop": "keen-garage-yokohama",
           "url": "https://www.keenfootwear.jp/pages/keen-garages/keen-garage-yokohama"
         }
