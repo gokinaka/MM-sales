@@ -10,6 +10,9 @@
 #   別経路の実行(--mode=blocked)だけが取得する。GitHub ランナーの IP から
 #   到達できないサイト向け。45秒×3回のリトライでも改善しないことを確認済み。
 #
+# format: feed にすると RSS/Atom として解釈し、1記事=日付+題名+本文に落とす。
+#   記事の公開日が年込みで入るので、本文中の年のない日付表記を推測せずに済む。
+#
 # render: true にするとヘッドレスブラウザで描画してから本文を取る。
 #   JavaScript でページを組み立てるサイト向け。素の HTTP より遅いので、
 #   本文が返らないことを確認したページにだけ付ける。
@@ -25,9 +28,12 @@ shops:
     name: 好日山荘 横浜西口店
     area: 横浜駅
     pages:
+      # セール・キャンペーンのカテゴリ別 Atom フィード。HTML の一覧ページと違い
+      # 記事ごとに年込みの公開日と本文が入るので、年のない日付表記を推測せずに済む。
       - id: sale
-        url: https://blog.kojitusanso.jp/yokohama/sale/
+        url: https://blog.kojitusanso.jp/yokohama/sale/atom.xml
         url_status: confirmed
+        format: feed
       - id: corporate
         url: https://www.kojitusanso.jp/
         url_status: confirmed
@@ -65,11 +71,13 @@ shops:
     name: カモシカスポーツ 山の店・横浜店
     area: 横浜駅
     pages:
-      # category/sale はナビゲーションのみが返り記事一覧が入らない(JS描画と推定)。
-      # 実際の開催中/開催予定一覧は横浜店ページ側に入るので、そちらが主。
+      # HTML の category/sale はナビゲーションしか返さなかったが、フィードには
+      # 全記事が年込みの日付と本文付きで入る。記事名に (横浜店)(松本店) の
+      # 店舗名が入るので、対象店舗の判別もしやすい。
       - id: sale
-        url: https://kamoshika.co.jp/category/sale
+        url: https://kamoshika.co.jp/feed
         url_status: confirmed
+        format: feed
       - id: shop
         url: https://kamoshika.co.jp/yokohama
         url_status: confirmed

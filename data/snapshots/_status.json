@@ -1,34 +1,18 @@
 {
   "runs": {
-    "blocked": {
-      "fetched_at": "2026-09-21T05:48:47+00:00",
-      "results": [
-        {
-          "attempts": 1,
-          "changed": false,
-          "chars": 1688,
-          "http_status": 200,
-          "page": "club-news",
-          "result": "ok",
-          "sha256": "2b72fa2ce3f0bf08",
-          "shop": "montbell",
-          "url": "https://club.montbell.jp/common/system/information/index.php?c=6"
-        }
-      ]
-    },
     "runner": {
-      "fetched_at": "2026-09-21T06:42:48+00:00",
+      "fetched_at": "2026-09-21T07:33:40+00:00",
       "results": [
         {
           "attempts": 1,
           "changed": false,
-          "chars": 13352,
+          "chars": 12796,
           "http_status": 200,
           "page": "sale",
           "result": "ok",
-          "sha256": "f6a0681139807c8f",
+          "sha256": "c51522e7ee0a69ab",
           "shop": "kojitusanso-yokohama",
-          "url": "https://blog.kojitusanso.jp/yokohama/sale/"
+          "url": "https://blog.kojitusanso.jp/yokohama/sale/atom.xml"
         },
         {
           "attempts": 1,
@@ -66,13 +50,13 @@
         {
           "attempts": 1,
           "changed": false,
-          "chars": 1154,
+          "chars": 9624,
           "http_status": 200,
           "page": "sale",
           "result": "ok",
-          "sha256": "70bbfe6e6739f4a8",
+          "sha256": "9a4210f0e884d767",
           "shop": "kamoshika-yokohama",
-          "url": "https://kamoshika.co.jp/category/sale"
+          "url": "https://kamoshika.co.jp/feed"
         },
         {
           "attempts": 1,
@@ -141,46 +125,34 @@
           "url": "https://www.snowpeak.co.jp/news/"
         },
         {
-          "changed": true,
-          "chars": 4183,
-          "http_status": 200,
+          "error": "Error: Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://www.thenorthface.jp/\nCall log:\n  - navigating to \"https://www.thenorthface.jp/\", waiting until \"domcontentloaded\"\n",
           "page": "top",
           "rendered": true,
-          "result": "ok",
-          "sha256": "03aa8045a3194bea",
+          "result": "error",
           "shop": "thenorthface",
           "url": "https://www.thenorthface.jp/"
         },
         {
-          "changed": true,
-          "chars": 4893,
-          "http_status": 200,
+          "error": "Error: Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://www.arcteryx.jp/\nCall log:\n  - navigating to \"https://www.arcteryx.jp/\", waiting until \"domcontentloaded\"\n",
           "page": "top",
           "rendered": true,
-          "result": "ok",
-          "sha256": "b007c96022d238d8",
+          "result": "error",
           "shop": "arcteryx",
           "url": "https://www.arcteryx.jp/"
         },
         {
-          "changed": false,
-          "chars": 7222,
-          "http_status": 200,
+          "error": "Error: Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://www.columbiasports.co.jp/\nCall log:\n  - navigating to \"https://www.columbiasports.co.jp/\", waiting until \"domcontentloaded\"\n",
           "page": "top",
           "rendered": true,
-          "result": "ok",
-          "sha256": "bbd8804559fe4921",
+          "result": "error",
           "shop": "columbia",
           "url": "https://www.columbiasports.co.jp/"
         },
         {
-          "changed": true,
-          "chars": 2351,
-          "http_status": 200,
+          "error": "Error: Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://www.keenfootwear.jp/pages/keen-garages/keen-garage-yokohama\nCall log:\n  - navigating to \"https://www.keenfootwear.jp/pages/keen-garages/keen-garage-yokohama\", waiting until \"domcontentloaded\"\n",
           "page": "store",
           "rendered": true,
-          "result": "ok",
-          "sha256": "b4edfff4f63478cc",
+          "result": "error",
           "shop": "keen-garage-yokohama",
           "url": "https://www.keenfootwear.jp/pages/keen-garages/keen-garage-yokohama"
         }

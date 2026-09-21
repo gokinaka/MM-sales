@@ -14,6 +14,7 @@ import re
 import sys
 import time
 import urllib.robotparser
+import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
@@ -73,6 +74,45 @@ def fetch(session, url: str, timeout: int, retries: int, record: dict):
             response.raise_for_status()
         time.sleep(delay)
         delay *= 2
+
+
+ATOM = "{http://www.w3.org/2005/Atom}"
+ENTRY_CHARS = 2000
+
+
+def extract_feed(xml_bytes: bytes) -> str:
+    """RSS/Atom を、1記事=日付+題名+本文 の安定した並びに落とす。
+
+    フィードは記事の公開日を年込みで持つので、本文中の「11月8日(金)」のような
+    年のない表記を解釈する必要がなくなる。ここが HTML を読むより優れている点。
+    """
+    root = ET.fromstring(xml_bytes)
+    entries = root.findall(f".//{ATOM}entry") or root.findall(".//item")
+
+    blocks = []
+    for entry in entries:
+        def pick(*names):
+            for n in names:
+                found = entry.find(f"{ATOM}{n}")
+                if found is None:
+                    found = entry.find(n)
+                if found is not None and found.text:
+                    return found.text.strip()
+            return ""
+
+        date = pick("published", "updated", "pubDate", "date")
+        title = pick("title")
+        body = pick("content", "summary", "description",
+                    "{http://purl.org/rss/1.0/modules/content/}encoded")
+
+        soup = BeautifulSoup(body, "html.parser")
+        for tag in soup(["script", "style"]):
+            tag.decompose()
+        text = WHITESPACE.sub(" ", soup.get_text(" ")).strip()[:ENTRY_CHARS]
+
+        blocks.append(f"{date}\t{title}\n  {text}")
+
+    return "\n\n".join(blocks) + "\n"
 
 
 class Renderer:
@@ -208,11 +248,14 @@ def main() -> int:
                     record["http_status"] = status
                     if status >= 400:
                         raise RuntimeError(f"HTTP {status}")
+                    text = extract_text(html, strip_patterns)
+                elif page.get("format") == "feed":
+                    response = fetch(session, url, timeout, retries, record)
+                    text = extract_feed(response.content)
                 else:
                     response = fetch(session, url, timeout, retries, record)
                     response.encoding = response.apparent_encoding or response.encoding
-                    html = response.text
-                text = extract_text(html, strip_patterns)
+                    text = extract_text(response.text, strip_patterns)
             except Exception as exc:
                 record["result"] = "error"
                 record["error"] = f"{type(exc).__name__}: {exc}"
