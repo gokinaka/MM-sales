@@ -17,7 +17,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-09-21T05:55:11+00:00",
+      "fetched_at": "2026-09-21T06:19:54+00:00",
       "results": [
         {
           "attempts": 1,
@@ -64,10 +64,13 @@
           "url": "https://www.ishii-sports.com/shop/yodobashiyokohama/"
         },
         {
-          "attempts": 3,
-          "error": "ConnectTimeout: HTTPSConnectionPool(host='www.montbell.jp', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.montbell.jp', port=443) at 0x7f0a33893830>, 'Connection to www.montbell.jp timed out. (connect timeout=45)'))",
+          "attempts": 1,
+          "changed": false,
+          "chars": 928,
+          "http_status": 200,
           "page": "top",
-          "result": "error",
+          "result": "ok",
+          "sha256": "000d30cefb64b753",
           "shop": "montbell",
           "url": "https://www.montbell.jp/"
         },
@@ -103,6 +106,50 @@
           "sha256": "6be395384755b6af",
           "shop": "markis-minatomirai",
           "url": "https://www.mec-markis.jp/mm/shop/detail/?act=7918"
+        },
+        {
+          "attempts": 1,
+          "changed": true,
+          "chars": 21198,
+          "http_status": 200,
+          "page": "news",
+          "result": "ok",
+          "sha256": "a2b9a7062a022bd1",
+          "shop": "mammut",
+          "url": "https://www.mammut.jp/news"
+        },
+        {
+          "attempts": 1,
+          "changed": true,
+          "chars": 4670,
+          "http_status": 200,
+          "page": "store",
+          "result": "ok",
+          "sha256": "d63a235ce0ea39dc",
+          "shop": "mammut",
+          "url": "https://www.mammut.jp/stores/mammut-store-%E6%A8%AA%E6%B5%9C"
+        },
+        {
+          "attempts": 1,
+          "changed": true,
+          "chars": 7197,
+          "http_status": 200,
+          "page": "top",
+          "result": "ok",
+          "sha256": "a97c3adf7f92c668",
+          "shop": "gregory",
+          "url": "https://www.gregory.jp/"
+        },
+        {
+          "attempts": 1,
+          "changed": true,
+          "chars": 9614,
+          "http_status": 200,
+          "page": "news",
+          "result": "ok",
+          "sha256": "fb49836486237f1f",
+          "shop": "snowpeak",
+          "url": "https://www.snowpeak.co.jp/news/"
         }
       ]
     }

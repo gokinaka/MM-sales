@@ -88,6 +88,106 @@ shops:
         url: https://www.mec-markis.jp/mm/shop/detail/?act=7918
         url_status: confirmed
 
+  - id: mammut
+    name: MAMMUT STORE 横浜
+    # 店舗は中区山下町。みなとみらい/横浜駅エリアからは外れるが、
+    # ニュースは全社共通なのでセール情報の取得元としては有効。
+    area: 横浜(中区山下町)
+    pages:
+      - id: news
+        url: https://www.mammut.jp/news
+        url_status: confirmed
+      - id: store
+        url: https://www.mammut.jp/stores/mammut-store-%E6%A8%AA%E6%B5%9C
+        url_status: confirmed
+
+  - id: gregory
+    name: グレゴリー 横浜みなとみらい
+    area: みなとみらい
+    pages:
+      - id: top
+        url: https://www.gregory.jp/
+        url_status: confirmed
+
+  - id: snowpeak
+    name: スノーピーク 横浜みなとみらい(MARK IS 1F)
+    area: みなとみらい
+    pages:
+      # 全社の新着情報。店舗ページ(sbs.snowpeak.co.jp/minatomirai/)は
+      # 544文字しか返らず中身が無いため採用しない。
+      - id: news
+        url: https://www.snowpeak.co.jp/news/
+        url_status: confirmed
+
+  # --- 以下は取得不可。理由を残して無効化する ---
+  #
+  # 2026-09-21 に実地検証した結果:
+  #   パタゴニア      … patagonia.jp が仮想待合室(bot対策)を返し、全URLで同一の
+  #                     "Hang Tight!" ページになる。取得不可。直営店は中区関内。
+  #   ヘリーハンセン  … helly-hansen.jp は接続不可、goldwin.co.jp/hh/ は HTTP 500。
+  #   ノースフェイス  … goldwin.co.jp/tnf/whatsnew/ は 2.6KB、thenorthface.jp は 1.7KB。
+  #   アークテリクス  … arcteryx.jp は SPA。想定パスはいずれも 404。
+  #   コロンビア      … columbiasports.co.jp は 5.4KB でセール記述ほぼ無し。
+  #   KEEN            … keenfootwear.jp は Shopify の SPA で 2.3KB。
+  # いずれも JavaScript 描画のため、ヘッドレスブラウザを導入しない限り取れない。
+  #
+  # なお MARK IS 館のニュースAPI(event_list.php)も全343記事/70店舗を走査したが、
+  # 上記ブランドの記事は 0 件だった。館経由では代替できない。
+
+  - id: patagonia-kannai
+    name: パタゴニア 横浜・関内
+    area: 横浜(中区関内)
+    enabled: false
+    pages:
+      - id: store
+        url: https://www.patagonia.jp/patagonia-kannai-japan/store_kannai.html
+        url_status: confirmed
+
+  - id: thenorthface
+    name: ザ・ノース・フェイス MARK IS みなとみらい
+    area: みなとみらい
+    enabled: false
+    pages:
+      - id: whatsnew
+        url: https://www.goldwin.co.jp/tnf/whatsnew/
+        url_status: confirmed
+
+  - id: arcteryx
+    name: アークテリクス MARK IS みなとみらい
+    area: みなとみらい
+    enabled: false
+    pages:
+      - id: top
+        url: https://www.arcteryx.jp/
+        url_status: confirmed
+
+  - id: columbia
+    name: コロンビア MARK IS みなとみらい
+    area: みなとみらい
+    enabled: false
+    pages:
+      - id: top
+        url: https://www.columbiasports.co.jp/
+        url_status: confirmed
+
+  - id: hellyhansen
+    name: ヘリーハンセン MARK IS みなとみらい
+    area: みなとみらい
+    enabled: false
+    pages:
+      - id: top
+        url: https://www.helly-hansen.jp/
+        url_status: unverified
+
+  - id: keen-garage-yokohama
+    name: KEEN GARAGE 横浜(MARK IS 1F)
+    area: みなとみらい
+    enabled: false
+    pages:
+      - id: store
+        url: https://www.keenfootwear.jp/pages/keen-garages/keen-garage-yokohama
+        url_status: confirmed
+
   # --- 以下は店舗の実在・URLとも未確認。初回実行の結果を見て採否を決める ---
 
   - id: sportsauthority-markis
