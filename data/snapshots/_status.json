@@ -1,7 +1,7 @@
 {
   "runs": {
     "runner": {
-      "fetched_at": "2026-09-21T07:33:40+00:00",
+      "fetched_at": "2026-09-21T07:36:22+00:00",
       "results": [
         {
           "attempts": 1,
@@ -125,34 +125,46 @@
           "url": "https://www.snowpeak.co.jp/news/"
         },
         {
-          "error": "Error: Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://www.thenorthface.jp/\nCall log:\n  - navigating to \"https://www.thenorthface.jp/\", waiting until \"domcontentloaded\"\n",
+          "changed": true,
+          "chars": 4183,
+          "http_status": 200,
           "page": "top",
           "rendered": true,
-          "result": "error",
+          "result": "ok",
+          "sha256": "d3b2737434aca15b",
           "shop": "thenorthface",
           "url": "https://www.thenorthface.jp/"
         },
         {
-          "error": "Error: Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://www.arcteryx.jp/\nCall log:\n  - navigating to \"https://www.arcteryx.jp/\", waiting until \"domcontentloaded\"\n",
+          "changed": false,
+          "chars": 4893,
+          "http_status": 200,
           "page": "top",
           "rendered": true,
-          "result": "error",
+          "result": "ok",
+          "sha256": "b007c96022d238d8",
           "shop": "arcteryx",
           "url": "https://www.arcteryx.jp/"
         },
         {
-          "error": "Error: Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://www.columbiasports.co.jp/\nCall log:\n  - navigating to \"https://www.columbiasports.co.jp/\", waiting until \"domcontentloaded\"\n",
+          "changed": false,
+          "chars": 7222,
+          "http_status": 200,
           "page": "top",
           "rendered": true,
-          "result": "error",
+          "result": "ok",
+          "sha256": "bbd8804559fe4921",
           "shop": "columbia",
           "url": "https://www.columbiasports.co.jp/"
         },
         {
-          "error": "Error: Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://www.keenfootwear.jp/pages/keen-garages/keen-garage-yokohama\nCall log:\n  - navigating to \"https://www.keenfootwear.jp/pages/keen-garages/keen-garage-yokohama\", waiting until \"domcontentloaded\"\n",
+          "changed": false,
+          "chars": 2351,
+          "http_status": 200,
           "page": "store",
           "rendered": true,
-          "result": "error",
+          "result": "ok",
+          "sha256": "b4edfff4f63478cc",
           "shop": "keen-garage-yokohama",
           "url": "https://www.keenfootwear.jp/pages/keen-garages/keen-garage-yokohama"
         }
