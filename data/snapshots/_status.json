@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-09-21T21:50:53+00:00",
+      "fetched_at": "2026-09-22T21:03:31+00:00",
       "results": [
         {
           "attempts": 1,
@@ -43,7 +43,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 6468,
           "http_status": 200,
           "page": "corporate",
@@ -54,7 +54,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 6559,
           "http_status": 200,
           "page": "sale",
@@ -98,7 +98,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 1359,
           "http_status": 200,
           "page": "montbell-shop",
@@ -132,11 +132,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 7297,
+          "chars": 227,
           "http_status": 200,
           "page": "top",
           "result": "ok",
-          "sha256": "06d35600cb673992",
+          "sha256": "65c46a036936b3a2",
           "shop": "gregory",
           "url": "https://www.gregory.jp/"
         },
@@ -153,12 +153,12 @@
         },
         {
           "changed": true,
-          "chars": 4143,
+          "chars": 4147,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "388cacb0812c2e21",
+          "sha256": "50b01b6131eafc2b",
           "shop": "thenorthface",
           "url": "https://www.thenorthface.jp/"
         },
@@ -175,12 +175,12 @@
         },
         {
           "changed": true,
-          "chars": 7188,
+          "chars": 7191,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "d7d4ea31dcb01262",
+          "sha256": "cbffea137825707d",
           "shop": "columbia",
           "url": "https://www.columbiasports.co.jp/"
         },
