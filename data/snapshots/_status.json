@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-09-22T21:03:31+00:00",
+      "fetched_at": "2026-09-23T21:18:23+00:00",
       "results": [
         {
           "attempts": 1,
@@ -43,12 +43,12 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 6468,
+          "changed": true,
+          "chars": 6483,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "5875451f3455822e",
+          "sha256": "7e2288e36173150d",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
@@ -98,12 +98,12 @@
         },
         {
           "attempts": 1,
-          "changed": false,
+          "changed": true,
           "chars": 1359,
           "http_status": 200,
           "page": "montbell-shop",
           "result": "ok",
-          "sha256": "9e4186c1f15102ca",
+          "sha256": "2f7f79e39e69fb6d",
           "shop": "markis-minatomirai",
           "url": "https://www.mec-markis.jp/mm/shop/detail/?act=7918"
         },
@@ -131,7 +131,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 227,
           "http_status": 200,
           "page": "top",
@@ -153,12 +153,12 @@
         },
         {
           "changed": true,
-          "chars": 4147,
+          "chars": 4116,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "50b01b6131eafc2b",
+          "sha256": "97609025dfe9bac6",
           "shop": "thenorthface",
           "url": "https://www.thenorthface.jp/"
         },
@@ -175,12 +175,12 @@
         },
         {
           "changed": true,
-          "chars": 7191,
+          "chars": 7235,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "cbffea137825707d",
+          "sha256": "ddef7da9b3524f84",
           "shop": "columbia",
           "url": "https://www.columbiasports.co.jp/"
         },
