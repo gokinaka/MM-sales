@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-09-24T21:19:33+00:00",
+      "fetched_at": "2026-09-25T21:17:45+00:00",
       "results": [
         {
           "attempts": 1,
@@ -44,11 +44,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 6473,
+          "chars": 6486,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "0194fa91c5ef7b3a",
+          "sha256": "2ba847e854c737c1",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
@@ -77,22 +77,22 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 10168,
+          "chars": 10247,
           "http_status": 200,
           "page": "sale",
           "result": "ok",
-          "sha256": "330477a9101891e1",
+          "sha256": "90c888d782005a0b",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/feed"
         },
         {
           "attempts": 1,
           "changed": true,
-          "chars": 2728,
+          "chars": 2732,
           "http_status": 200,
           "page": "shop",
           "result": "ok",
-          "sha256": "d481045f2131e862",
+          "sha256": "545fd6b56882bc5f",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/yokohama"
         },
@@ -109,7 +109,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 21332,
           "http_status": 200,
           "page": "news",
@@ -132,33 +132,33 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 6695,
+          "chars": 6732,
           "http_status": 200,
           "page": "top",
           "result": "ok",
-          "sha256": "f299a34a9d15aca6",
+          "sha256": "49b8db9d548b48fa",
           "shop": "gregory",
           "url": "https://www.gregory.jp/"
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 9614,
+          "changed": true,
+          "chars": 9550,
           "http_status": 200,
           "page": "news",
           "result": "ok",
-          "sha256": "fb49836486237f1f",
+          "sha256": "4925b7c5b50f5ce3",
           "shop": "snowpeak",
           "url": "https://www.snowpeak.co.jp/news/"
         },
         {
           "changed": true,
-          "chars": 4118,
+          "chars": 4090,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "737feb65211a7102",
+          "sha256": "85a07ef5c5592956",
           "shop": "thenorthface",
           "url": "https://www.thenorthface.jp/"
         },
@@ -175,12 +175,12 @@
         },
         {
           "changed": true,
-          "chars": 6913,
+          "chars": 6921,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "e397a7e862fea255",
+          "sha256": "81a18ae3937c1b69",
           "shop": "columbia",
           "url": "https://www.columbiasports.co.jp/"
         },

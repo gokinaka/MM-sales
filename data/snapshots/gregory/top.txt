@@ -215,7 +215,7 @@ Shop
 おすすめ
 New
 AR Model
-クラシック
+クラシックバッグ
 チンチバッグM
 CINCH BAG M V2
 ¥9,900
@@ -271,7 +271,7 @@ CLASSIC BELT POUCH S V2
 3 colors
 New
 AR Model
-クラシック
+クラシックダッフル
 クラシックダッフルXS
 DUFFEL BAG XS
 ¥14,300
@@ -284,7 +284,7 @@ AR Model
 SATCHEL S V2
 ¥11,000
 (税込)
-13 colors
+14 colors
 New
 AR Model
 クラシック
@@ -300,11 +300,12 @@ AR Model
 PAD SHOULDER POUCH M
 ¥8,250
 (税込)
-28 colors
+29 colors
 New
 AR Model
-クラシック
+クラシックバッグ
 クイックポケットM
+QUICK POCKET M
 ¥6,600
 (税込)
 30 colors
@@ -355,7 +356,7 @@ DAYPACK DSP
 11 colors
 Exclusive
 AR Model
-CLASSIC DAY
+クラシックデイ
 イージーピージーデイ LTC
 EASY PEASY DAY LTC
 ¥25,300
@@ -423,7 +424,7 @@ AR Model
 FINE DAY V2
 ¥22,000
 (税込)
-28 colors
+29 colors
 AR Model
 CLASSIC DAY
 ファインデイ V2
@@ -446,9 +447,9 @@ AR Model
 RHUNE 22
 ¥30,800
 (税込)
-5 colors
+6 colors
 AR Model
-クラシック
+クラシックデイ
 キャンパスデイL
 CAMPUS DAY L
 ¥20,900
@@ -460,23 +461,23 @@ AR Model
 EASY PEASY DAY
 ¥22,000
 (税込)
-24 colors
+25 colors
 AR Model
 クラシックバッグ
 パデッドショルダーポーチM
 PAD SHOULDER POUCH M
 ¥8,250
 (税込)
-28 colors
+29 colors
 AR Model
-クラシック
+クラシックバッグ
 テールランナー V2
 TAILRUNNER V2
 ¥7,700
 (税込)
 28 colors
 AR Model
-クラシック
+クラシックバッグ
 ボートトートS
 BOAT TOTE S
 ¥9,900
@@ -564,9 +565,9 @@ AR Model
 RHUNE 22
 ¥30,800
 (税込)
-5 colors
+6 colors
 AR Model
-クラシック
+クラシックデイ
 キャンパスデイL
 CAMPUS DAY L
 ¥20,900
@@ -578,23 +579,23 @@ AR Model
 EASY PEASY DAY
 ¥22,000
 (税込)
-24 colors
+25 colors
 AR Model
 クラシックバッグ
 パデッドショルダーポーチM
 PAD SHOULDER POUCH M
 ¥8,250
 (税込)
-28 colors
+29 colors
 AR Model
-クラシック
+クラシックバッグ
 テールランナー V2
 TAILRUNNER V2
 ¥7,700
 (税込)
 28 colors
 AR Model
-クラシック
+クラシックバッグ
 ボートトートS
 BOAT TOTE S
 ¥9,900
