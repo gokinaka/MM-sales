@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-09-26T20:49:36+00:00",
+      "fetched_at": "2026-09-27T21:13:35+00:00",
       "results": [
         {
           "attempts": 1,
@@ -44,11 +44,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 6501,
+          "chars": 6361,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "e824889fe979bd86",
+          "sha256": "c993c27ebaabf036",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
@@ -75,24 +75,18 @@
           "url": "https://www.ishii-sports.com/shop/yodobashiyokohama/"
         },
         {
-          "attempts": 1,
-          "changed": false,
-          "chars": 10247,
-          "http_status": 200,
+          "attempts": 3,
+          "error": "ConnectTimeout: HTTPSConnectionPool(host='kamoshika.co.jp', port=443): Max retries exceeded with url: /feed (Caused by ConnectTimeoutError(<HTTPSConnection(host='kamoshika.co.jp', port=443) at 0x7f20f1df12e0>, 'Connection to kamoshika.co.jp timed out. (connect timeout=45)'))",
           "page": "sale",
-          "result": "ok",
-          "sha256": "90c888d782005a0b",
+          "result": "error",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/feed"
         },
         {
-          "attempts": 1,
-          "changed": false,
-          "chars": 2732,
-          "http_status": 200,
+          "attempts": 3,
+          "error": "ConnectTimeout: HTTPSConnectionPool(host='kamoshika.co.jp', port=443): Max retries exceeded with url: /yokohama (Caused by ConnectTimeoutError(<HTTPSConnection(host='kamoshika.co.jp', port=443) at 0x7f20f1df20f0>, 'Connection to kamoshika.co.jp timed out. (connect timeout=45)'))",
           "page": "shop",
-          "result": "ok",
-          "sha256": "545fd6b56882bc5f",
+          "result": "error",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/yokohama"
         },
@@ -142,7 +136,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 9550,
           "http_status": 200,
           "page": "news",
@@ -153,12 +147,12 @@
         },
         {
           "changed": true,
-          "chars": 4090,
+          "chars": 4114,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "81203ef197189c2e",
+          "sha256": "c776818e26aea5a7",
           "shop": "thenorthface",
           "url": "https://www.thenorthface.jp/"
         },
@@ -175,12 +169,12 @@
         },
         {
           "changed": true,
-          "chars": 6910,
+          "chars": 6939,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "ca5b29ce5e274d24",
+          "sha256": "09f4a719a978c52b",
           "shop": "columbia",
           "url": "https://www.columbiasports.co.jp/"
         },
