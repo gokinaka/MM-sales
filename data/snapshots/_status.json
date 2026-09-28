@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-09-27T21:13:35+00:00",
+      "fetched_at": "2026-09-28T23:04:33+00:00",
       "results": [
         {
           "attempts": 1,
@@ -44,11 +44,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 6361,
+          "chars": 6359,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "c993c27ebaabf036",
+          "sha256": "119df6880a215323",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
@@ -75,18 +75,24 @@
           "url": "https://www.ishii-sports.com/shop/yodobashiyokohama/"
         },
         {
-          "attempts": 3,
-          "error": "ConnectTimeout: HTTPSConnectionPool(host='kamoshika.co.jp', port=443): Max retries exceeded with url: /feed (Caused by ConnectTimeoutError(<HTTPSConnection(host='kamoshika.co.jp', port=443) at 0x7f20f1df12e0>, 'Connection to kamoshika.co.jp timed out. (connect timeout=45)'))",
+          "attempts": 1,
+          "changed": false,
+          "chars": 10247,
+          "http_status": 200,
           "page": "sale",
-          "result": "error",
+          "result": "ok",
+          "sha256": "90c888d782005a0b",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/feed"
         },
         {
-          "attempts": 3,
-          "error": "ConnectTimeout: HTTPSConnectionPool(host='kamoshika.co.jp', port=443): Max retries exceeded with url: /yokohama (Caused by ConnectTimeoutError(<HTTPSConnection(host='kamoshika.co.jp', port=443) at 0x7f20f1df20f0>, 'Connection to kamoshika.co.jp timed out. (connect timeout=45)'))",
+          "attempts": 1,
+          "changed": true,
+          "chars": 2708,
+          "http_status": 200,
           "page": "shop",
-          "result": "error",
+          "result": "ok",
+          "sha256": "ca7b32c8402d8c86",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/yokohama"
         },
@@ -103,23 +109,23 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 21332,
+          "changed": true,
+          "chars": 21398,
           "http_status": 200,
           "page": "news",
           "result": "ok",
-          "sha256": "240bba3fda855e89",
+          "sha256": "9f745846b5958bb8",
           "shop": "mammut",
           "url": "https://www.mammut.jp/news"
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 4670,
+          "changed": true,
+          "chars": 4676,
           "http_status": 200,
           "page": "store",
           "result": "ok",
-          "sha256": "d63a235ce0ea39dc",
+          "sha256": "c8de42a37a30b64a",
           "shop": "mammut",
           "url": "https://www.mammut.jp/stores/mammut-store-%E6%A8%AA%E6%B5%9C"
         },
@@ -136,45 +142,45 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 9550,
+          "changed": true,
+          "chars": 9579,
           "http_status": 200,
           "page": "news",
           "result": "ok",
-          "sha256": "fdd0c47f39de4c95",
+          "sha256": "1a8f8f7c900ac97d",
           "shop": "snowpeak",
           "url": "https://www.snowpeak.co.jp/news/"
         },
         {
           "changed": true,
-          "chars": 4114,
+          "chars": 4141,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "c776818e26aea5a7",
+          "sha256": "4e457b5d72f15012",
           "shop": "thenorthface",
           "url": "https://www.thenorthface.jp/"
         },
         {
-          "changed": false,
-          "chars": 4893,
+          "changed": true,
+          "chars": 4917,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "b007c96022d238d8",
+          "sha256": "f7d412d8424605ea",
           "shop": "arcteryx",
           "url": "https://www.arcteryx.jp/"
         },
         {
           "changed": true,
-          "chars": 6939,
+          "chars": 6782,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "09f4a719a978c52b",
+          "sha256": "e76d056fd226ea5c",
           "shop": "columbia",
           "url": "https://www.columbiasports.co.jp/"
         },
