@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-09-30T22:05:42+00:00",
+      "fetched_at": "2026-10-01T22:30:04+00:00",
       "results": [
         {
           "attempts": 1,
@@ -44,17 +44,17 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 6353,
+          "chars": 6336,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "1f55e21f38617768",
+          "sha256": "9aa88f3a9a22b896",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 6605,
           "http_status": 200,
           "page": "sale",
@@ -76,7 +76,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 10560,
           "http_status": 200,
           "page": "sale",
@@ -87,7 +87,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 2620,
           "http_status": 200,
           "page": "shop",
@@ -98,7 +98,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 1355,
           "http_status": 200,
           "page": "montbell-shop",
@@ -110,11 +110,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 21543,
+          "chars": 21617,
           "http_status": 200,
           "page": "news",
           "result": "ok",
-          "sha256": "0dc0697722783283",
+          "sha256": "4553b1340073ad10",
           "shop": "mammut",
           "url": "https://www.mammut.jp/news"
         },
@@ -142,7 +142,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 9600,
           "http_status": 200,
           "page": "news",
@@ -153,45 +153,45 @@
         },
         {
           "changed": true,
-          "chars": 4112,
+          "chars": 4125,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "2f2c17fac6c52a6b",
+          "sha256": "6197143fd54dbc08",
           "shop": "thenorthface",
           "url": "https://www.thenorthface.jp/"
         },
         {
           "changed": true,
-          "chars": 4893,
+          "chars": 4851,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "0dbe6377822381a0",
+          "sha256": "a8a515c489026fac",
           "shop": "arcteryx",
           "url": "https://www.arcteryx.jp/"
         },
         {
           "changed": true,
-          "chars": 6783,
+          "chars": 6757,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "3365770c96c7e783",
+          "sha256": "acb4242f3532499b",
           "shop": "columbia",
           "url": "https://www.columbiasports.co.jp/"
         },
         {
-          "changed": false,
-          "chars": 2351,
+          "changed": true,
+          "chars": 2366,
           "http_status": 200,
           "page": "store",
           "rendered": true,
           "result": "ok",
-          "sha256": "b4edfff4f63478cc",
+          "sha256": "7c3d2c0a43e63cef",
           "shop": "keen-garage-yokohama",
           "url": "https://www.keenfootwear.jp/pages/keen-garages/keen-garage-yokohama"
         }
