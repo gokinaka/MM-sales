@@ -28,22 +28,22 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-10-01T22:30:04+00:00",
+      "fetched_at": "2026-10-02T21:59:33+00:00",
       "results": [
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 12796,
+          "changed": true,
+          "chars": 13203,
           "http_status": 200,
           "page": "sale",
           "result": "ok",
-          "sha256": "c51522e7ee0a69ab",
+          "sha256": "48a280e587411218",
           "shop": "kojitusanso-yokohama",
           "url": "https://blog.kojitusanso.jp/yokohama/sale/atom.xml"
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 6336,
           "http_status": 200,
           "page": "corporate",
@@ -76,23 +76,23 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 10560,
+          "changed": true,
+          "chars": 10298,
           "http_status": 200,
           "page": "sale",
           "result": "ok",
-          "sha256": "9015b5eddc403816",
+          "sha256": "face91788b8411a2",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/feed"
         },
         {
           "attempts": 1,
-          "changed": false,
+          "changed": true,
           "chars": 2620,
           "http_status": 200,
           "page": "shop",
           "result": "ok",
-          "sha256": "f879c8736233f0c3",
+          "sha256": "6e7c3a00d3fe547c",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/yokohama"
         },
@@ -109,7 +109,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 21617,
           "http_status": 200,
           "page": "news",
@@ -153,17 +153,17 @@
         },
         {
           "changed": true,
-          "chars": 4125,
+          "chars": 4131,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "6197143fd54dbc08",
+          "sha256": "b1120c359999f464",
           "shop": "thenorthface",
           "url": "https://www.thenorthface.jp/"
         },
         {
-          "changed": true,
+          "changed": false,
           "chars": 4851,
           "http_status": 200,
           "page": "top",
@@ -175,23 +175,23 @@
         },
         {
           "changed": true,
-          "chars": 6757,
+          "chars": 6807,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "acb4242f3532499b",
+          "sha256": "60412e87434cc0ee",
           "shop": "columbia",
           "url": "https://www.columbiasports.co.jp/"
         },
         {
           "changed": true,
-          "chars": 2366,
+          "chars": 2369,
           "http_status": 200,
           "page": "store",
           "rendered": true,
           "result": "ok",
-          "sha256": "7c3d2c0a43e63cef",
+          "sha256": "d9df4917c0d9c16e",
           "shop": "keen-garage-yokohama",
           "url": "https://www.keenfootwear.jp/pages/keen-garages/keen-garage-yokohama"
         }
