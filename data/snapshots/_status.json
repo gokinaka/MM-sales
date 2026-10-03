@@ -28,16 +28,16 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-10-02T21:59:33+00:00",
+      "fetched_at": "2026-10-03T20:48:19+00:00",
       "results": [
         {
           "attempts": 1,
           "changed": true,
-          "chars": 13203,
+          "chars": 13213,
           "http_status": 200,
           "page": "sale",
           "result": "ok",
-          "sha256": "48a280e587411218",
+          "sha256": "218d3541f307b428",
           "shop": "kojitusanso-yokohama",
           "url": "https://blog.kojitusanso.jp/yokohama/sale/atom.xml"
         },
@@ -76,7 +76,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 10298,
           "http_status": 200,
           "page": "sale",
@@ -87,7 +87,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 2620,
           "http_status": 200,
           "page": "shop",
@@ -98,12 +98,12 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 1355,
+          "changed": true,
+          "chars": 1361,
           "http_status": 200,
           "page": "montbell-shop",
           "result": "ok",
-          "sha256": "b7e485890caea32b",
+          "sha256": "107c1bac4de491fe",
           "shop": "markis-minatomirai",
           "url": "https://www.mec-markis.jp/mm/shop/detail/?act=7918"
         },
@@ -153,12 +153,12 @@
         },
         {
           "changed": true,
-          "chars": 4131,
+          "chars": 4126,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "b1120c359999f464",
+          "sha256": "cad81bdb177a4485",
           "shop": "thenorthface",
           "url": "https://www.thenorthface.jp/"
         },
@@ -175,17 +175,17 @@
         },
         {
           "changed": true,
-          "chars": 6807,
+          "chars": 6824,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "60412e87434cc0ee",
+          "sha256": "2bafcdfd2b5ce931",
           "shop": "columbia",
           "url": "https://www.columbiasports.co.jp/"
         },
         {
-          "changed": true,
+          "changed": false,
           "chars": 2369,
           "http_status": 200,
           "page": "store",
