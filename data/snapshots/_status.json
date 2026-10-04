@@ -28,11 +28,11 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-10-03T20:48:19+00:00",
+      "fetched_at": "2026-10-04T21:03:23+00:00",
       "results": [
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 13213,
           "http_status": 200,
           "page": "sale",
@@ -99,11 +99,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 1361,
+          "chars": 1355,
           "http_status": 200,
           "page": "montbell-shop",
           "result": "ok",
-          "sha256": "107c1bac4de491fe",
+          "sha256": "4b88d91f94654c77",
           "shop": "markis-minatomirai",
           "url": "https://www.mec-markis.jp/mm/shop/detail/?act=7918"
         },
@@ -131,12 +131,12 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 6732,
+          "changed": true,
+          "chars": 6636,
           "http_status": 200,
           "page": "top",
           "result": "ok",
-          "sha256": "49b8db9d548b48fa",
+          "sha256": "09ebc13804f6a87c",
           "shop": "gregory",
           "url": "https://www.gregory.jp/"
         },
@@ -153,12 +153,12 @@
         },
         {
           "changed": true,
-          "chars": 4126,
+          "chars": 4125,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "cad81bdb177a4485",
+          "sha256": "e16432bc6bc1d2a3",
           "shop": "thenorthface",
           "url": "https://www.thenorthface.jp/"
         },
@@ -175,12 +175,12 @@
         },
         {
           "changed": true,
-          "chars": 6824,
+          "chars": 6848,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "2bafcdfd2b5ce931",
+          "sha256": "8cbfae33460c51d7",
           "shop": "columbia",
           "url": "https://www.columbiasports.co.jp/"
         },
