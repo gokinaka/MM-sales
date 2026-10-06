@@ -219,6 +219,7 @@ CINCH BAG M V2
 ¥9,900
 (税込)
 5 colors
++1
 New
 AR Model
 ライフスタイルアクセサリー
@@ -243,6 +244,8 @@ BOAT TOTE L
 ¥13,200
 (税込)
 6 colors
++1 more
++2
 New
 AR Model
 クラシック
@@ -275,6 +278,8 @@ DUFFEL BAG XS
 ¥14,300
 (税込)
 6 colors
++1 more
++2
 New
 AR Model
 クラシックバッグ
@@ -282,7 +287,9 @@ AR Model
 SATCHEL S V2
 ¥11,000
 (税込)
-14 colors
+13 colors
++8 more
++9
 New
 AR Model
 クラシック
@@ -291,6 +298,8 @@ DAYPACK DSP
 ¥33,000
 (税込)
 11 colors
++6 more
++7
 New
 AR Model
 クラシックバッグ
@@ -298,7 +307,9 @@ AR Model
 PAD SHOULDER POUCH M
 ¥8,250
 (税込)
-29 colors
+28 colors
++23 more
++24
 New
 AR Model
 クラシックバッグ
@@ -307,6 +318,8 @@ QUICK POCKET M
 ¥6,600
 (税込)
 30 colors
++25 more
++26
 Exclusive
 AR Model
 ASPECT
@@ -323,6 +336,8 @@ DAYPACK DSP
 ¥33,000
 (税込)
 11 colors
++6 more
++7
 20% OFF
 Exclusive
 AR Model
@@ -350,6 +365,8 @@ DAYPACK DSP
 ¥35,200
 (税込)
 11 colors
++6 more
++7
 Exclusive
 AR Model
 クラシックデイ
@@ -418,7 +435,9 @@ AR Model
 FINE DAY V2
 ¥22,000
 (税込)
-29 colors
+28 colors
++23 more
++24
 AR Model
 CLASSIC DAY
 ファインデイ V2
@@ -434,13 +453,16 @@ DAYPACK DSP
 ¥33,000
 (税込)
 11 colors
++6 more
++7
 AR Model
 エブリデイアドベンチャー
 ルーヌ22
 RHUNE 22
 ¥30,800
 (税込)
-6 colors
+5 colors
++1
 AR Model
 クラシックデイ
 キャンパスデイL
@@ -448,20 +470,26 @@ CAMPUS DAY L
 ¥20,900
 (税込)
 15 colors
++10 more
++11
 AR Model
 クラシックデイ
 イージーピージーデイ
 EASY PEASY DAY
 ¥22,000
 (税込)
-25 colors
+24 colors
++19 more
++20
 AR Model
 クラシックバッグ
 パデッドショルダーポーチM
 PAD SHOULDER POUCH M
 ¥8,250
 (税込)
-29 colors
+28 colors
++23 more
++24
 AR Model
 クラシックバッグ
 テールランナー V2
@@ -469,6 +497,8 @@ TAILRUNNER V2
 ¥7,700
 (税込)
 28 colors
++23 more
++24
 AR Model
 クラシックバッグ
 ボートトートS
@@ -476,6 +506,8 @@ BOAT TOTE S
 ¥9,900
 (税込)
 19 colors
++14 more
++15
 AR Model
 クラシック
 クイックポケットL
@@ -483,6 +515,8 @@ QUICK POCKET L
 ¥8,800
 (税込)
 24 colors
++19 more
++20
 {{promotionCalloutMsg}}
 {{explanationHtml}}
 ニュース
@@ -551,13 +585,16 @@ DAYPACK DSP
 ¥33,000
 (税込)
 11 colors
++6 more
++7
 AR Model
 エブリデイアドベンチャー
 ルーヌ22
 RHUNE 22
 ¥30,800
 (税込)
-6 colors
+5 colors
++1
 AR Model
 クラシックデイ
 キャンパスデイL
@@ -565,20 +602,26 @@ CAMPUS DAY L
 ¥20,900
 (税込)
 15 colors
++10 more
++11
 AR Model
 クラシックデイ
 イージーピージーデイ
 EASY PEASY DAY
 ¥22,000
 (税込)
-25 colors
+24 colors
++19 more
++20
 AR Model
 クラシックバッグ
 パデッドショルダーポーチM
 PAD SHOULDER POUCH M
 ¥8,250
 (税込)
-29 colors
+28 colors
++23 more
++24
 AR Model
 クラシックバッグ
 テールランナー V2
@@ -586,6 +629,8 @@ TAILRUNNER V2
 ¥7,700
 (税込)
 28 colors
++23 more
++24
 AR Model
 クラシックバッグ
 ボートトートS
@@ -593,6 +638,8 @@ BOAT TOTE S
 ¥9,900
 (税込)
 19 colors
++14 more
++15
 AR Model
 クラシック
 クイックポケットL
@@ -600,6 +647,8 @@ QUICK POCKET L
 ¥8,800
 (税込)
 24 colors
++19 more
++20
 Explorer #グレゴリー
 新商品やお得な情報をいち早くお知らせ
 ご登録ありがとうございます。
