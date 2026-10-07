@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-10-06T22:30:59+00:00",
+      "fetched_at": "2026-10-07T22:54:52+00:00",
       "results": [
         {
           "attempts": 1,
@@ -44,11 +44,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 6332,
+          "chars": 6349,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "90d94e0340b14bd6",
+          "sha256": "256d7c8348cd610c",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
@@ -76,23 +76,23 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 10298,
+          "changed": true,
+          "chars": 10358,
           "http_status": 200,
           "page": "sale",
           "result": "ok",
-          "sha256": "face91788b8411a2",
+          "sha256": "361705fecaa3d298",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/feed"
         },
         {
           "attempts": 1,
           "changed": true,
-          "chars": 2590,
+          "chars": 2594,
           "http_status": 200,
           "page": "shop",
           "result": "ok",
-          "sha256": "41222472a26b6569",
+          "sha256": "cc1a8bdd2eb22784",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/yokohama"
         },
@@ -131,7 +131,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 6916,
           "http_status": 200,
           "page": "top",
@@ -153,17 +153,17 @@
         },
         {
           "changed": true,
-          "chars": 4196,
+          "chars": 4144,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "5f5ed64b742a58bb",
+          "sha256": "e03910e7d16c5036",
           "shop": "thenorthface",
           "url": "https://www.thenorthface.jp/"
         },
         {
-          "changed": true,
+          "changed": false,
           "chars": 4865,
           "http_status": 200,
           "page": "top",
@@ -175,23 +175,23 @@
         },
         {
           "changed": true,
-          "chars": 6795,
+          "chars": 6458,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "336a8865f9736b34",
+          "sha256": "8a93c2e47a17a326",
           "shop": "columbia",
           "url": "https://www.columbiasports.co.jp/"
         },
         {
           "changed": true,
-          "chars": 2416,
+          "chars": 2418,
           "http_status": 200,
           "page": "store",
           "rendered": true,
           "result": "ok",
-          "sha256": "1a0ac6bf694a4f11",
+          "sha256": "69b4db55a7800d61",
           "shop": "keen-garage-yokohama",
           "url": "https://www.keenfootwear.jp/pages/keen-garages/keen-garage-yokohama"
         }
