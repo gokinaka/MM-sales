@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-10-07T22:54:52+00:00",
+      "fetched_at": "2026-10-08T23:06:44+00:00",
       "results": [
         {
           "attempts": 1,
@@ -44,11 +44,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 6349,
+          "chars": 6354,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "256d7c8348cd610c",
+          "sha256": "fc2213e711a554b0",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
@@ -77,22 +77,22 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 10358,
+          "chars": 10712,
           "http_status": 200,
           "page": "sale",
           "result": "ok",
-          "sha256": "361705fecaa3d298",
+          "sha256": "6d0c4aa5713608a3",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/feed"
         },
         {
           "attempts": 1,
           "changed": true,
-          "chars": 2594,
+          "chars": 2627,
           "http_status": 200,
           "page": "shop",
           "result": "ok",
-          "sha256": "cc1a8bdd2eb22784",
+          "sha256": "bd62ffb588746b48",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/yokohama"
         },
@@ -109,34 +109,34 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 21610,
+          "changed": true,
+          "chars": 21711,
           "http_status": 200,
           "page": "news",
           "result": "ok",
-          "sha256": "ea0bbffa7e05348a",
+          "sha256": "28a45d98f8bd56b7",
           "shop": "mammut",
           "url": "https://www.mammut.jp/news"
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 4676,
+          "changed": true,
+          "chars": 4688,
           "http_status": 200,
           "page": "store",
           "result": "ok",
-          "sha256": "c8de42a37a30b64a",
+          "sha256": "f07ef137118baf19",
           "shop": "mammut",
           "url": "https://www.mammut.jp/stores/mammut-store-%E6%A8%AA%E6%B5%9C"
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 6916,
+          "changed": true,
+          "chars": 6915,
           "http_status": 200,
           "page": "top",
           "result": "ok",
-          "sha256": "dc21c373e16fa039",
+          "sha256": "f861a0602810c064",
           "shop": "gregory",
           "url": "https://www.gregory.jp/"
         },
@@ -153,39 +153,39 @@
         },
         {
           "changed": true,
-          "chars": 4144,
+          "chars": 4162,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "e03910e7d16c5036",
+          "sha256": "0de9c3070b0479fb",
           "shop": "thenorthface",
           "url": "https://www.thenorthface.jp/"
         },
         {
-          "changed": false,
-          "chars": 4865,
+          "changed": true,
+          "chars": 4796,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "62c4472f3d312518",
+          "sha256": "dc572293bc68c36f",
           "shop": "arcteryx",
           "url": "https://www.arcteryx.jp/"
         },
         {
           "changed": true,
-          "chars": 6458,
+          "chars": 6773,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "8a93c2e47a17a326",
+          "sha256": "cefb4726382f1bbe",
           "shop": "columbia",
           "url": "https://www.columbiasports.co.jp/"
         },
         {
-          "changed": true,
+          "changed": false,
           "chars": 2418,
           "http_status": 200,
           "page": "store",
