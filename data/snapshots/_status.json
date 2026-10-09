@@ -28,27 +28,27 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-10-08T23:06:44+00:00",
+      "fetched_at": "2026-10-09T22:27:07+00:00",
       "results": [
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 13213,
+          "changed": true,
+          "chars": 13442,
           "http_status": 200,
           "page": "sale",
           "result": "ok",
-          "sha256": "218d3541f307b428",
+          "sha256": "360514923f9d27ac",
           "shop": "kojitusanso-yokohama",
           "url": "https://blog.kojitusanso.jp/yokohama/sale/atom.xml"
         },
         {
           "attempts": 1,
           "changed": true,
-          "chars": 6354,
+          "chars": 6329,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "fc2213e711a554b0",
+          "sha256": "6f1e5c577bbc7e1b",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
@@ -76,7 +76,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 10712,
           "http_status": 200,
           "page": "sale",
@@ -87,7 +87,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 2627,
           "http_status": 200,
           "page": "shop",
@@ -109,7 +109,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 21711,
           "http_status": 200,
           "page": "news",
@@ -120,7 +120,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 4688,
           "http_status": 200,
           "page": "store",
@@ -132,55 +132,55 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 6915,
+          "chars": 6896,
           "http_status": 200,
           "page": "top",
           "result": "ok",
-          "sha256": "f861a0602810c064",
+          "sha256": "bfae176d97bffed4",
           "shop": "gregory",
           "url": "https://www.gregory.jp/"
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 9610,
+          "changed": true,
+          "chars": 9613,
           "http_status": 200,
           "page": "news",
           "result": "ok",
-          "sha256": "1557b8979b8423f5",
+          "sha256": "7984ac07563c0220",
           "shop": "snowpeak",
           "url": "https://www.snowpeak.co.jp/news/"
         },
         {
           "changed": true,
-          "chars": 4162,
+          "chars": 4170,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "0de9c3070b0479fb",
+          "sha256": "edb09137b20d99eb",
           "shop": "thenorthface",
           "url": "https://www.thenorthface.jp/"
         },
         {
           "changed": true,
-          "chars": 4796,
+          "chars": 4832,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "dc572293bc68c36f",
+          "sha256": "231dcad41a354cd5",
           "shop": "arcteryx",
           "url": "https://www.arcteryx.jp/"
         },
         {
           "changed": true,
-          "chars": 6773,
+          "chars": 6840,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "cefb4726382f1bbe",
+          "sha256": "17df487e61fb2fd9",
           "shop": "columbia",
           "url": "https://www.columbiasports.co.jp/"
         },
