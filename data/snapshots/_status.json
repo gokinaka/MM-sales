@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-10-10T21:21:55+00:00",
+      "fetched_at": "2026-10-11T21:40:44+00:00",
       "results": [
         {
           "attempts": 1,
@@ -44,11 +44,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 6196,
+          "chars": 6201,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "414f89142b877711",
+          "sha256": "5553e9142114150b",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
@@ -98,7 +98,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 1355,
           "http_status": 200,
           "page": "montbell-shop",
@@ -142,7 +142,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 9609,
           "http_status": 200,
           "page": "news",
@@ -153,12 +153,12 @@
         },
         {
           "changed": true,
-          "chars": 4162,
+          "chars": 4119,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "ed93746d8068ab97",
+          "sha256": "38cc494312c15064",
           "shop": "thenorthface",
           "url": "https://www.thenorthface.jp/"
         },
@@ -175,12 +175,12 @@
         },
         {
           "changed": true,
-          "chars": 6812,
+          "chars": 6903,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "6dd41b4d570beb29",
+          "sha256": "4c494ccbe18a1d55",
           "shop": "columbia",
           "url": "https://www.columbiasports.co.jp/"
         },
