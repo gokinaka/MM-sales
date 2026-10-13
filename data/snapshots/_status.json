@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-10-11T21:40:44+00:00",
+      "fetched_at": "2026-10-13T00:20:33+00:00",
       "results": [
         {
           "attempts": 1,
@@ -44,11 +44,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 6201,
+          "chars": 6212,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "5553e9142114150b",
+          "sha256": "707c8b8649c33ba8",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
@@ -76,23 +76,23 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 10712,
+          "changed": true,
+          "chars": 10358,
           "http_status": 200,
           "page": "sale",
           "result": "ok",
-          "sha256": "6d0c4aa5713608a3",
+          "sha256": "361705fecaa3d298",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/feed"
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 2627,
+          "changed": true,
+          "chars": 2566,
           "http_status": 200,
           "page": "shop",
           "result": "ok",
-          "sha256": "bd62ffb588746b48",
+          "sha256": "c06635660ae5cdff",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/yokohama"
         },
@@ -153,12 +153,12 @@
         },
         {
           "changed": true,
-          "chars": 4119,
+          "chars": 4129,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "38cc494312c15064",
+          "sha256": "b3f0037e1aeaf1ad",
           "shop": "thenorthface",
           "url": "https://www.thenorthface.jp/"
         },
@@ -175,12 +175,12 @@
         },
         {
           "changed": true,
-          "chars": 6903,
+          "chars": 6867,
           "http_status": 200,
           "page": "top",
           "rendered": true,
           "result": "ok",
-          "sha256": "4c494ccbe18a1d55",
+          "sha256": "6e5246e86ed236b1",
           "shop": "columbia",
           "url": "https://www.columbiasports.co.jp/"
         },
