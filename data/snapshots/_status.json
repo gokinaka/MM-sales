@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-10-13T22:27:12+00:00",
+      "fetched_at": "2026-10-14T21:24:08+00:00",
       "results": [
         {
           "attempts": 1,
@@ -44,11 +44,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 6188,
+          "chars": 6279,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "4b1f2af4a34c90b1",
+          "sha256": "70276611c3306cd7",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
@@ -76,7 +76,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 11021,
           "http_status": 200,
           "page": "sale",
@@ -87,7 +87,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 2594,
           "http_status": 200,
           "page": "shop",
@@ -109,7 +109,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 21761,
           "http_status": 200,
           "page": "news",
@@ -120,7 +120,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 4738,
           "http_status": 200,
           "page": "store",
@@ -131,7 +131,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 6946,
           "http_status": 200,
           "page": "top",
@@ -142,7 +142,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 9614,
           "http_status": 200,
           "page": "news",
@@ -152,46 +152,34 @@
           "url": "https://www.snowpeak.co.jp/news/"
         },
         {
-          "changed": true,
-          "chars": 4132,
-          "http_status": 200,
+          "error": "Error: BrowserType.launch: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     playwright install                                     ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝",
           "page": "top",
           "rendered": true,
-          "result": "ok",
-          "sha256": "e31e14703d75b469",
+          "result": "error",
           "shop": "thenorthface",
           "url": "https://www.thenorthface.jp/"
         },
         {
-          "changed": false,
-          "chars": 4832,
-          "http_status": 200,
+          "error": "Error: It looks like you are using Playwright Sync API inside the asyncio loop.\nPlease use the Async API instead.",
           "page": "top",
           "rendered": true,
-          "result": "ok",
-          "sha256": "231dcad41a354cd5",
+          "result": "error",
           "shop": "arcteryx",
           "url": "https://www.arcteryx.jp/"
         },
         {
-          "changed": true,
-          "chars": 7024,
-          "http_status": 200,
+          "error": "Error: It looks like you are using Playwright Sync API inside the asyncio loop.\nPlease use the Async API instead.",
           "page": "top",
           "rendered": true,
-          "result": "ok",
-          "sha256": "f60961a43887653b",
+          "result": "error",
           "shop": "columbia",
           "url": "https://www.columbiasports.co.jp/"
         },
         {
-          "changed": false,
-          "chars": 2418,
-          "http_status": 200,
+          "error": "Error: It looks like you are using Playwright Sync API inside the asyncio loop.\nPlease use the Async API instead.",
           "page": "store",
           "rendered": true,
-          "result": "ok",
-          "sha256": "69b4db55a7800d61",
+          "result": "error",
           "shop": "keen-garage-yokohama",
           "url": "https://www.keenfootwear.jp/pages/keen-garages/keen-garage-yokohama"
         }
