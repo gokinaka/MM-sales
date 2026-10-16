@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-10-15T21:05:57+00:00",
+      "fetched_at": "2026-10-16T20:41:19+00:00",
       "results": [
         {
           "attempts": 1,
@@ -43,12 +43,12 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 6279,
+          "changed": true,
+          "chars": 8263,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "70276611c3306cd7",
+          "sha256": "83ce43726cfdfa0e",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
@@ -76,29 +76,29 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 11021,
+          "changed": true,
+          "chars": 11716,
           "http_status": 200,
           "page": "sale",
           "result": "ok",
-          "sha256": "38719e5d84f83bd5",
+          "sha256": "e9f785aaf1e3c7c9",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/feed"
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 2594,
+          "changed": true,
+          "chars": 2606,
           "http_status": 200,
           "page": "shop",
           "result": "ok",
-          "sha256": "33e0c456e73c6d4c",
+          "sha256": "14de05b0410f1a76",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/yokohama"
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 1355,
           "http_status": 200,
           "page": "montbell-shop",
@@ -142,12 +142,12 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 9614,
+          "changed": true,
+          "chars": 9637,
           "http_status": 200,
           "page": "news",
           "result": "ok",
-          "sha256": "3470fc5b8547a0c8",
+          "sha256": "f1aa9bb05e38b22f",
           "shop": "snowpeak",
           "url": "https://www.snowpeak.co.jp/news/"
         },
