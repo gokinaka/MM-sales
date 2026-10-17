@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-10-16T20:41:19+00:00",
+      "fetched_at": "2026-10-17T20:19:41+00:00",
       "results": [
         {
           "attempts": 1,
@@ -44,11 +44,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 8263,
+          "chars": 8262,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "83ce43726cfdfa0e",
+          "sha256": "847e9cfa0132c62e",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
@@ -76,7 +76,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 11716,
           "http_status": 200,
           "page": "sale",
@@ -87,7 +87,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 2606,
           "http_status": 200,
           "page": "shop",
@@ -142,7 +142,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 9637,
           "http_status": 200,
           "page": "news",
