@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-10-17T20:19:41+00:00",
+      "fetched_at": "2026-10-18T20:18:36+00:00",
       "results": [
         {
           "attempts": 1,
@@ -44,11 +44,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 8262,
+          "chars": 8139,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "847e9cfa0132c62e",
+          "sha256": "d687f5a15bcaf2cc",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
@@ -98,12 +98,12 @@
         },
         {
           "attempts": 1,
-          "changed": false,
+          "changed": true,
           "chars": 1355,
           "http_status": 200,
           "page": "montbell-shop",
           "result": "ok",
-          "sha256": "9e4088172e6a5d30",
+          "sha256": "985e09402994013b",
           "shop": "markis-minatomirai",
           "url": "https://www.mec-markis.jp/mm/shop/detail/?act=7918"
         },
