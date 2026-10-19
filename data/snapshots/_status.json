@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-10-18T20:18:36+00:00",
+      "fetched_at": "2026-10-19T22:08:38+00:00",
       "results": [
         {
           "attempts": 1,
@@ -44,11 +44,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 8139,
+          "chars": 8143,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "d687f5a15bcaf2cc",
+          "sha256": "ab742143963833fa",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
@@ -76,29 +76,29 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 11716,
+          "changed": true,
+          "chars": 10551,
           "http_status": 200,
           "page": "sale",
           "result": "ok",
-          "sha256": "e9f785aaf1e3c7c9",
+          "sha256": "a24e279f0ba4c033",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/feed"
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 2606,
+          "changed": true,
+          "chars": 2815,
           "http_status": 200,
           "page": "shop",
           "result": "ok",
-          "sha256": "14de05b0410f1a76",
+          "sha256": "c84cb3e860ae93c2",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/yokohama"
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 1355,
           "http_status": 200,
           "page": "montbell-shop",
