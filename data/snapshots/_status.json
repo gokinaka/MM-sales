@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-10-19T22:08:38+00:00",
+      "fetched_at": "2026-10-20T21:24:33+00:00",
       "results": [
         {
           "attempts": 1,
@@ -44,11 +44,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 8143,
+          "chars": 8146,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "ab742143963833fa",
+          "sha256": "db91ec0ce0df0898",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
@@ -76,7 +76,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 10551,
           "http_status": 200,
           "page": "sale",
@@ -87,7 +87,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 2815,
           "http_status": 200,
           "page": "shop",
@@ -98,12 +98,12 @@
         },
         {
           "attempts": 1,
-          "changed": false,
+          "changed": true,
           "chars": 1355,
           "http_status": 200,
           "page": "montbell-shop",
           "result": "ok",
-          "sha256": "985e09402994013b",
+          "sha256": "97f3c25e79c341d0",
           "shop": "markis-minatomirai",
           "url": "https://www.mec-markis.jp/mm/shop/detail/?act=7918"
         },
@@ -131,12 +131,12 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 6946,
+          "changed": true,
+          "chars": 6961,
           "http_status": 200,
           "page": "top",
           "result": "ok",
-          "sha256": "522bb65928143495",
+          "sha256": "a5a18020a299227b",
           "shop": "gregory",
           "url": "https://www.gregory.jp/"
         },

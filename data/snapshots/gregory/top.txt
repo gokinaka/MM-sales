@@ -247,7 +247,7 @@ BOAT TOTE L
 +1
 New
 AR Model
-クラシック
+クラシックバッグ
 クラシックトート
 CLASSIC TOTE
 ¥11,000
@@ -255,7 +255,7 @@ CLASSIC TOTE
 4 colors
 New
 AR Model
-クラシック
+クラシックデイ
 ファインデイDSP
 FINE DAY DSP
 ¥24,200
@@ -291,7 +291,7 @@ SATCHEL S V2
 +9
 New
 AR Model
-クラシック
+クラシックデイ
 デイパックDSP
 DAYPACK DSP
 ¥33,000
@@ -329,7 +329,7 @@ COMPASS 40 RF
 3 colors
 Exclusive
 AR Model
-クラシック
+クラシックデイ
 デイパック ダブルサイドポケット
 DAYPACK DSP
 ¥33,000
@@ -358,7 +358,7 @@ COMPASS 30 RF
 3 colors
 Exclusive
 AR Model
-クラシック
+クラシックデイ
 デイパック ダブルサイドポケット
 DAYPACK DSP
 ¥35,200
@@ -446,7 +446,7 @@ FINE DAY V2 JPS
 1 color
 Exclusive
 AR Model
-クラシック
+クラシックデイ
 デイパック ダブルサイドポケット
 DAYPACK DSP
 ¥33,000
@@ -580,7 +580,7 @@ FINE DAY V2 JPS
 1 color
 Exclusive
 AR Model
-クラシック
+クラシックデイ
 デイパック ダブルサイドポケット
 DAYPACK DSP
 ¥33,000
