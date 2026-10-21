@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-10-20T21:24:33+00:00",
+      "fetched_at": "2026-10-21T21:25:33+00:00",
       "results": [
         {
           "attempts": 1,
@@ -44,11 +44,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 8146,
+          "chars": 8242,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "db91ec0ce0df0898",
+          "sha256": "86af3bda38ef1ae7",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
@@ -98,7 +98,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 1355,
           "http_status": 200,
           "page": "montbell-shop",
@@ -132,11 +132,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 6961,
+          "chars": 6966,
           "http_status": 200,
           "page": "top",
           "result": "ok",
-          "sha256": "a5a18020a299227b",
+          "sha256": "df6892df29623aac",
           "shop": "gregory",
           "url": "https://www.gregory.jp/"
         },
@@ -152,15 +152,13 @@
           "url": "https://www.snowpeak.co.jp/news/"
         },
         {
-          "error": "Error: BrowserType.launch: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     playwright install                                     ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝",
           "page": "top",
-          "rendered": true,
-          "result": "error",
+          "result": "robots_disallowed",
           "shop": "thenorthface",
           "url": "https://www.thenorthface.jp/"
         },
         {
-          "error": "Error: It looks like you are using Playwright Sync API inside the asyncio loop.\nPlease use the Async API instead.",
+          "error": "Error: BrowserType.launch: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     playwright install                                     ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝",
           "page": "top",
           "rendered": true,
           "result": "error",
