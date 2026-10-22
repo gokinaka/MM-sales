@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-10-21T21:25:33+00:00",
+      "fetched_at": "2026-10-22T21:30:24+00:00",
       "results": [
         {
           "attempts": 1,
@@ -44,33 +44,33 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 8242,
+          "chars": 8263,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "86af3bda38ef1ae7",
+          "sha256": "9dfd2691b4ac1d6a",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 6605,
+          "changed": true,
+          "chars": 280,
           "http_status": 200,
           "page": "sale",
           "result": "ok",
-          "sha256": "65f8668ccae556bd",
+          "sha256": "6236e956f443872d",
           "shop": "ishii-yodobashi-yokohama",
           "url": "https://www.ishii-sports.com/category/sale/"
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 757,
+          "changed": true,
+          "chars": 280,
           "http_status": 200,
           "page": "shop",
           "result": "ok",
-          "sha256": "954120258c9771ad",
+          "sha256": "6236e956f443872d",
           "shop": "ishii-yodobashi-yokohama",
           "url": "https://www.ishii-sports.com/shop/yodobashiyokohama/"
         },
@@ -98,40 +98,40 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 1355,
+          "changed": true,
+          "chars": 1361,
           "http_status": 200,
           "page": "montbell-shop",
           "result": "ok",
-          "sha256": "97f3c25e79c341d0",
+          "sha256": "94066a6596ade006",
           "shop": "markis-minatomirai",
           "url": "https://www.mec-markis.jp/mm/shop/detail/?act=7918"
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 21761,
+          "changed": true,
+          "chars": 21827,
           "http_status": 200,
           "page": "news",
           "result": "ok",
-          "sha256": "5f06b66c3e84d72d",
+          "sha256": "79f8b8ffa329a01a",
           "shop": "mammut",
           "url": "https://www.mammut.jp/news"
         },
         {
           "attempts": 1,
-          "changed": false,
+          "changed": true,
           "chars": 4738,
           "http_status": 200,
           "page": "store",
           "result": "ok",
-          "sha256": "3f7dea5e098581a9",
+          "sha256": "a2a21037a7d50bf7",
           "shop": "mammut",
           "url": "https://www.mammut.jp/stores/mammut-store-%E6%A8%AA%E6%B5%9C"
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 6966,
           "http_status": 200,
           "page": "top",
