@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-10-22T21:30:24+00:00",
+      "fetched_at": "2026-10-23T21:10:06+00:00",
       "results": [
         {
           "attempts": 1,
@@ -44,17 +44,17 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 8263,
+          "chars": 8233,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "9dfd2691b4ac1d6a",
+          "sha256": "ca8003c5dafa222f",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 280,
           "http_status": 200,
           "page": "sale",
@@ -65,7 +65,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 280,
           "http_status": 200,
           "page": "shop",
@@ -76,29 +76,29 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 10551,
+          "changed": true,
+          "chars": 10909,
           "http_status": 200,
           "page": "sale",
           "result": "ok",
-          "sha256": "a24e279f0ba4c033",
+          "sha256": "956815f5ae8425f6",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/feed"
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 2815,
+          "changed": true,
+          "chars": 2877,
           "http_status": 200,
           "page": "shop",
           "result": "ok",
-          "sha256": "c84cb3e860ae93c2",
+          "sha256": "d2ad27cb5d6b745c",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/yokohama"
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 1361,
           "http_status": 200,
           "page": "montbell-shop",
@@ -109,7 +109,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 21827,
           "http_status": 200,
           "page": "news",
@@ -120,7 +120,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 4738,
           "http_status": 200,
           "page": "store",
@@ -142,23 +142,25 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 9637,
+          "changed": true,
+          "chars": 9596,
           "http_status": 200,
           "page": "news",
           "result": "ok",
-          "sha256": "f1aa9bb05e38b22f",
+          "sha256": "c3057aacdcea9693",
           "shop": "snowpeak",
           "url": "https://www.snowpeak.co.jp/news/"
         },
         {
+          "error": "Error: BrowserType.launch: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     playwright install                                     ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝",
           "page": "top",
-          "result": "robots_disallowed",
+          "rendered": true,
+          "result": "error",
           "shop": "thenorthface",
           "url": "https://www.thenorthface.jp/"
         },
         {
-          "error": "Error: BrowserType.launch: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     playwright install                                     ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝",
+          "error": "Error: It looks like you are using Playwright Sync API inside the asyncio loop.\nPlease use the Async API instead.",
           "page": "top",
           "rendered": true,
           "result": "error",
