@@ -28,22 +28,22 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-10-23T21:10:06+00:00",
+      "fetched_at": "2026-10-24T20:27:12+00:00",
       "results": [
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 13442,
+          "changed": true,
+          "chars": 13503,
           "http_status": 200,
           "page": "sale",
           "result": "ok",
-          "sha256": "360514923f9d27ac",
+          "sha256": "5c2be7d4610ab7c3",
           "shop": "kojitusanso-yokohama",
           "url": "https://blog.kojitusanso.jp/yokohama/sale/atom.xml"
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 8233,
           "http_status": 200,
           "page": "corporate",
@@ -77,17 +77,17 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 10909,
+          "chars": 10908,
           "http_status": 200,
           "page": "sale",
           "result": "ok",
-          "sha256": "956815f5ae8425f6",
+          "sha256": "4cd8ec3cf11e9f17",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/feed"
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 2877,
           "http_status": 200,
           "page": "shop",
@@ -98,12 +98,12 @@
         },
         {
           "attempts": 1,
-          "changed": false,
+          "changed": true,
           "chars": 1361,
           "http_status": 200,
           "page": "montbell-shop",
           "result": "ok",
-          "sha256": "94066a6596ade006",
+          "sha256": "0ecd413cb271017a",
           "shop": "markis-minatomirai",
           "url": "https://www.mec-markis.jp/mm/shop/detail/?act=7918"
         },
@@ -142,7 +142,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 9596,
           "http_status": 200,
           "page": "news",
