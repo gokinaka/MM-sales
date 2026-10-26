@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-10-25T20:34:32+00:00",
+      "fetched_at": "2026-10-26T22:36:23+00:00",
       "results": [
         {
           "attempts": 1,
@@ -44,11 +44,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 8225,
+          "chars": 6185,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "0de3b1d8b3dc0648",
+          "sha256": "c0533f0fde1d8307",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
@@ -103,7 +103,7 @@
           "http_status": 200,
           "page": "montbell-shop",
           "result": "ok",
-          "sha256": "9ee2647e24719d4e",
+          "sha256": "2d650af65b22952e",
           "shop": "markis-minatomirai",
           "url": "https://www.mec-markis.jp/mm/shop/detail/?act=7918"
         },
@@ -142,12 +142,12 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 9596,
+          "changed": true,
+          "chars": 9625,
           "http_status": 200,
           "page": "news",
           "result": "ok",
-          "sha256": "c3057aacdcea9693",
+          "sha256": "0794b97029510503",
           "shop": "snowpeak",
           "url": "https://www.snowpeak.co.jp/news/"
         },
