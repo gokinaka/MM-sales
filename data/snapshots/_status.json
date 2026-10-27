@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-10-26T22:36:23+00:00",
+      "fetched_at": "2026-10-27T21:57:19+00:00",
       "results": [
         {
           "attempts": 1,
@@ -43,7 +43,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 6185,
           "http_status": 200,
           "page": "corporate",
@@ -98,7 +98,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 1361,
           "http_status": 200,
           "page": "montbell-shop",
@@ -142,7 +142,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 9625,
           "http_status": 200,
           "page": "news",
