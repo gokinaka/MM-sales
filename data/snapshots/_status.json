@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-10-28T22:21:41+00:00",
+      "fetched_at": "2026-10-29T22:34:49+00:00",
       "results": [
         {
           "attempts": 1,
@@ -72,17 +72,17 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 11597,
+          "chars": 11665,
           "http_status": 200,
           "page": "sale",
           "result": "ok",
-          "sha256": "afb3f513fed222c9",
+          "sha256": "abb8813172e20cd7",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/feed"
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 2914,
           "http_status": 200,
           "page": "shop",
@@ -127,22 +127,22 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 7015,
+          "chars": 7046,
           "http_status": 200,
           "page": "top",
           "result": "ok",
-          "sha256": "996ff5e2bd1c5029",
+          "sha256": "fe2423a345d8e2ce",
           "shop": "gregory",
           "url": "https://www.gregory.jp/"
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 9625,
+          "changed": true,
+          "chars": 9632,
           "http_status": 200,
           "page": "news",
           "result": "ok",
-          "sha256": "0794b97029510503",
+          "sha256": "b911eb578fb1f738",
           "shop": "snowpeak",
           "url": "https://www.snowpeak.co.jp/news/"
         },
