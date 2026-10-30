@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-10-29T22:34:49+00:00",
+      "fetched_at": "2026-10-30T22:03:27+00:00",
       "results": [
         {
           "attempts": 1,
@@ -49,56 +49,56 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 280,
+          "changed": true,
+          "chars": 6605,
           "http_status": 200,
           "page": "sale",
           "result": "ok",
-          "sha256": "6236e956f443872d",
+          "sha256": "65f8668ccae556bd",
           "shop": "ishii-yodobashi-yokohama",
           "url": "https://www.ishii-sports.com/category/sale/"
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 280,
+          "changed": true,
+          "chars": 757,
           "http_status": 200,
           "page": "shop",
           "result": "ok",
-          "sha256": "6236e956f443872d",
+          "sha256": "954120258c9771ad",
           "shop": "ishii-yodobashi-yokohama",
           "url": "https://www.ishii-sports.com/shop/yodobashiyokohama/"
         },
         {
           "attempts": 1,
           "changed": true,
-          "chars": 11665,
+          "chars": 12973,
           "http_status": 200,
           "page": "sale",
           "result": "ok",
-          "sha256": "abb8813172e20cd7",
+          "sha256": "abba6aee02fb64f6",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/feed"
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 2914,
+          "changed": true,
+          "chars": 2940,
           "http_status": 200,
           "page": "shop",
           "result": "ok",
-          "sha256": "1095fe73ff01a31b",
+          "sha256": "9aa0b1e3e04b7a73",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/yokohama"
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 1361,
+          "changed": true,
+          "chars": 1355,
           "http_status": 200,
           "page": "montbell-shop",
           "result": "ok",
-          "sha256": "2d650af65b22952e",
+          "sha256": "34ca9383abfe7611",
           "shop": "markis-minatomirai",
           "url": "https://www.mec-markis.jp/mm/shop/detail/?act=7918"
         },
@@ -126,7 +126,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 7046,
           "http_status": 200,
           "page": "top",
@@ -138,11 +138,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 9632,
+          "chars": 9623,
           "http_status": 200,
           "page": "news",
           "result": "ok",
-          "sha256": "b911eb578fb1f738",
+          "sha256": "9f59e6e6474d82ae",
           "shop": "snowpeak",
           "url": "https://www.snowpeak.co.jp/news/"
         },
