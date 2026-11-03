@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-11-03T00:44:51+00:00",
+      "fetched_at": "2026-11-03T23:01:26+00:00",
       "results": [
         {
           "attempts": 1,
@@ -44,11 +44,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 6165,
+          "chars": 6065,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "6d7a74b118f92261",
+          "sha256": "77befd86535eca31",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
@@ -76,7 +76,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 12444,
           "http_status": 200,
           "page": "sale",
@@ -98,18 +98,18 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 1355,
+          "changed": true,
+          "chars": 1361,
           "http_status": 200,
           "page": "montbell-shop",
           "result": "ok",
-          "sha256": "34ca9383abfe7611",
+          "sha256": "6f356c3131ef3284",
           "shop": "markis-minatomirai",
           "url": "https://www.mec-markis.jp/mm/shop/detail/?act=7918"
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 21830,
           "http_status": 200,
           "page": "news",
@@ -120,7 +120,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 4738,
           "http_status": 200,
           "page": "store",
@@ -131,12 +131,12 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 7046,
+          "changed": true,
+          "chars": 7175,
           "http_status": 200,
           "page": "top",
           "result": "ok",
-          "sha256": "fe2423a345d8e2ce",
+          "sha256": "1062e601f53279c8",
           "shop": "gregory",
           "url": "https://www.gregory.jp/"
         },
