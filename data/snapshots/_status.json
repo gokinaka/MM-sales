@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-11-01T21:57:30+00:00",
+      "fetched_at": "2026-11-03T00:44:51+00:00",
       "results": [
         {
           "attempts": 1,
@@ -42,14 +42,19 @@
           "url": "https://blog.kojitusanso.jp/yokohama/sale/atom.xml"
         },
         {
+          "attempts": 1,
+          "changed": true,
+          "chars": 6165,
+          "http_status": 200,
           "page": "corporate",
-          "result": "robots_disallowed",
+          "result": "ok",
+          "sha256": "6d7a74b118f92261",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 6590,
           "http_status": 200,
           "page": "sale",
@@ -70,18 +75,24 @@
           "url": "https://www.ishii-sports.com/shop/yodobashiyokohama/"
         },
         {
-          "attempts": 3,
-          "error": "ConnectTimeout: HTTPSConnectionPool(host='kamoshika.co.jp', port=443): Max retries exceeded with url: /feed (Caused by ConnectTimeoutError(<HTTPSConnection(host='kamoshika.co.jp', port=443) at 0x7f55cf9c8ce0>, 'Connection to kamoshika.co.jp timed out. (connect timeout=45)'))",
+          "attempts": 1,
+          "changed": true,
+          "chars": 12444,
+          "http_status": 200,
           "page": "sale",
-          "result": "error",
+          "result": "ok",
+          "sha256": "6c8e4779dd88f3f3",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/feed"
         },
         {
-          "attempts": 3,
-          "error": "ConnectTimeout: HTTPSConnectionPool(host='kamoshika.co.jp', port=443): Max retries exceeded with url: /yokohama (Caused by ConnectTimeoutError(<HTTPSConnection(host='kamoshika.co.jp', port=443) at 0x7f55cf9c9820>, 'Connection to kamoshika.co.jp timed out. (connect timeout=45)'))",
+          "attempts": 1,
+          "changed": false,
+          "chars": 2619,
+          "http_status": 200,
           "page": "shop",
-          "result": "error",
+          "result": "ok",
+          "sha256": "73af647fac348f8e",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/yokohama"
         },
@@ -103,18 +114,18 @@
           "http_status": 200,
           "page": "news",
           "result": "ok",
-          "sha256": "3fa6ea2d08e4159d",
+          "sha256": "99895f4cebf41fa7",
           "shop": "mammut",
           "url": "https://www.mammut.jp/news"
         },
         {
           "attempts": 1,
-          "changed": false,
+          "changed": true,
           "chars": 4738,
           "http_status": 200,
           "page": "store",
           "result": "ok",
-          "sha256": "a2a21037a7d50bf7",
+          "sha256": "488f9103d0748cbb",
           "shop": "mammut",
           "url": "https://www.mammut.jp/stores/mammut-store-%E6%A8%AA%E6%B5%9C"
         },
