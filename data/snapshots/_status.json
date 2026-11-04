@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-11-03T23:01:26+00:00",
+      "fetched_at": "2026-11-04T23:24:32+00:00",
       "results": [
         {
           "attempts": 1,
@@ -44,11 +44,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 6065,
+          "chars": 6457,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "77befd86535eca31",
+          "sha256": "c6a07c9cb36550d2",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
@@ -87,18 +87,18 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 2619,
+          "changed": true,
+          "chars": 2968,
           "http_status": 200,
           "page": "shop",
           "result": "ok",
-          "sha256": "73af647fac348f8e",
+          "sha256": "a073348200033dab",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/yokohama"
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 1361,
           "http_status": 200,
           "page": "montbell-shop",
@@ -132,22 +132,22 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 7175,
+          "chars": 7227,
           "http_status": 200,
           "page": "top",
           "result": "ok",
-          "sha256": "1062e601f53279c8",
+          "sha256": "3d42d6763f917f3c",
           "shop": "gregory",
           "url": "https://www.gregory.jp/"
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 9578,
+          "changed": true,
+          "chars": 9615,
           "http_status": 200,
           "page": "news",
           "result": "ok",
-          "sha256": "2f053eafe3b36ad8",
+          "sha256": "e224e88a36856097",
           "shop": "snowpeak",
           "url": "https://www.snowpeak.co.jp/news/"
         },
