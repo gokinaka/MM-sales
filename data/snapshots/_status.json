@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-11-04T23:24:32+00:00",
+      "fetched_at": "2026-11-05T23:34:02+00:00",
       "results": [
         {
           "attempts": 1,
@@ -44,11 +44,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 6457,
+          "chars": 6450,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "c6a07c9cb36550d2",
+          "sha256": "01a55ae20619f5e2",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
@@ -76,23 +76,23 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 12444,
+          "changed": true,
+          "chars": 13121,
           "http_status": 200,
           "page": "sale",
           "result": "ok",
-          "sha256": "6c8e4779dd88f3f3",
+          "sha256": "2625c78605545441",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/feed"
         },
         {
           "attempts": 1,
           "changed": true,
-          "chars": 2968,
+          "chars": 2876,
           "http_status": 200,
           "page": "shop",
           "result": "ok",
-          "sha256": "a073348200033dab",
+          "sha256": "897586bf29adc695",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/yokohama"
         },
@@ -109,12 +109,12 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 21830,
+          "changed": true,
+          "chars": 21898,
           "http_status": 200,
           "page": "news",
           "result": "ok",
-          "sha256": "99895f4cebf41fa7",
+          "sha256": "37948c89b0b9dd65",
           "shop": "mammut",
           "url": "https://www.mammut.jp/news"
         },
@@ -132,22 +132,22 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 7227,
+          "chars": 7242,
           "http_status": 200,
           "page": "top",
           "result": "ok",
-          "sha256": "3d42d6763f917f3c",
+          "sha256": "74110798aab857f9",
           "shop": "gregory",
           "url": "https://www.gregory.jp/"
         },
         {
           "attempts": 1,
           "changed": true,
-          "chars": 9615,
+          "chars": 9650,
           "http_status": 200,
           "page": "news",
           "result": "ok",
-          "sha256": "e224e88a36856097",
+          "sha256": "9fddc275f93c4fe7",
           "shop": "snowpeak",
           "url": "https://www.snowpeak.co.jp/news/"
         },
