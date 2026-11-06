@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-11-05T23:34:02+00:00",
+      "fetched_at": "2026-11-06T22:53:52+00:00",
       "results": [
         {
           "attempts": 1,
@@ -43,7 +43,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 6450,
           "http_status": 200,
           "page": "corporate",
@@ -77,11 +77,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 13121,
+          "chars": 13155,
           "http_status": 200,
           "page": "sale",
           "result": "ok",
-          "sha256": "2625c78605545441",
+          "sha256": "cb42c5a4109c16a7",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/feed"
         },
@@ -92,24 +92,24 @@
           "http_status": 200,
           "page": "shop",
           "result": "ok",
-          "sha256": "897586bf29adc695",
+          "sha256": "985b074011655ca9",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/yokohama"
         },
         {
           "attempts": 1,
-          "changed": false,
+          "changed": true,
           "chars": 1361,
           "http_status": 200,
           "page": "montbell-shop",
           "result": "ok",
-          "sha256": "6f356c3131ef3284",
+          "sha256": "9ee2647e24719d4e",
           "shop": "markis-minatomirai",
           "url": "https://www.mec-markis.jp/mm/shop/detail/?act=7918"
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 21898,
           "http_status": 200,
           "page": "news",
@@ -132,17 +132,17 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 7242,
+          "chars": 7457,
           "http_status": 200,
           "page": "top",
           "result": "ok",
-          "sha256": "74110798aab857f9",
+          "sha256": "ea051fc421bf92c1",
           "shop": "gregory",
           "url": "https://www.gregory.jp/"
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 9650,
           "http_status": 200,
           "page": "news",
