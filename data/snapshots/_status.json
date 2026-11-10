@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-11-08T21:50:53+00:00",
+      "fetched_at": "2026-11-10T01:19:07+00:00",
       "results": [
         {
           "attempts": 1,
@@ -44,11 +44,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 6344,
+          "chars": 6348,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "c286b8856b5fa0e8",
+          "sha256": "82d300024c10566d",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
@@ -77,44 +77,44 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 13152,
+          "chars": 12433,
           "http_status": 200,
           "page": "sale",
           "result": "ok",
-          "sha256": "72f1ff8603a56d1b",
+          "sha256": "2287610da6dff6e1",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/feed"
         },
         {
           "attempts": 1,
           "changed": true,
-          "chars": 2848,
+          "chars": 2815,
           "http_status": 200,
           "page": "shop",
           "result": "ok",
-          "sha256": "15940ce5c6ea6fbe",
+          "sha256": "22fe31a5a1f0a2ad",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/yokohama"
         },
         {
           "attempts": 1,
-          "changed": false,
+          "changed": true,
           "chars": 1361,
           "http_status": 200,
           "page": "montbell-shop",
           "result": "ok",
-          "sha256": "b2fbd47f9a68bab1",
+          "sha256": "6f356c3131ef3284",
           "shop": "markis-minatomirai",
           "url": "https://www.mec-markis.jp/mm/shop/detail/?act=7918"
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 21898,
+          "changed": true,
+          "chars": 22038,
           "http_status": 200,
           "page": "news",
           "result": "ok",
-          "sha256": "37948c89b0b9dd65",
+          "sha256": "c8f0eee9a1f0baa0",
           "shop": "mammut",
           "url": "https://www.mammut.jp/news"
         },
@@ -132,11 +132,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 7457,
+          "chars": 7496,
           "http_status": 200,
           "page": "top",
           "result": "ok",
-          "sha256": "42b3ea2cda370f13",
+          "sha256": "1229b43ec7e01642",
           "shop": "gregory",
           "url": "https://www.gregory.jp/"
         },
@@ -152,7 +152,7 @@
           "url": "https://www.snowpeak.co.jp/news/"
         },
         {
-          "error": "Error: BrowserType.launch: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     playwright install                                     ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝",
+          "error": "Error: BrowserType.launch: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium_headless_shell-1254/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     playwright install                                     ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝",
           "page": "top",
           "rendered": true,
           "result": "error",

@@ -212,9 +212,9 @@ International customers are welcome — we also accept credit cards issued outsi
 バッグ 20L以下
 ショルダーバッグ シンプル
 ショルダーバッグ ギフト
-アウトドア ショルダーバッグ
-ポーチ ユニセックス
 ショルダーバッグ コーデュラバリスティックブラック
+ポーチ ユニセックス
+アウトドア ショルダーバッグ
 ポーチ 20L以下
 ユニセックス ギフト
 Shop
@@ -534,6 +534,8 @@ QUICK POCKET L
 {{promotionCalloutMsg}}
 {{explanationHtml}}
 ニュース
+2026.11.12
+【キャンペーン】10％OFF スペシャルクーポン配布！
 2026.11.06
 雨にも負けず！MOUNTAIN DAY vol.2
 2026.11.06
