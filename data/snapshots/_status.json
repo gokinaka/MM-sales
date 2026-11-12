@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-11-12T00:14:56+00:00",
+      "fetched_at": "2026-11-12T23:20:30+00:00",
       "results": [
         {
           "attempts": 1,
@@ -43,7 +43,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 6342,
           "http_status": 200,
           "page": "corporate",
@@ -136,13 +136,13 @@
           "http_status": 200,
           "page": "top",
           "result": "ok",
-          "sha256": "7d642295fe1abb2e",
+          "sha256": "6445ef8fe061a7fa",
           "shop": "gregory",
           "url": "https://www.gregory.jp/"
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 9655,
           "http_status": 200,
           "page": "news",
