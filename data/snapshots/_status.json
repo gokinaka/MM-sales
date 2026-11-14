@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-11-13T23:23:37+00:00",
+      "fetched_at": "2026-11-14T22:07:24+00:00",
       "results": [
         {
           "attempts": 1,
@@ -43,7 +43,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 6324,
           "http_status": 200,
           "page": "corporate",
@@ -77,39 +77,39 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 12890,
+          "chars": 12918,
           "http_status": 200,
           "page": "sale",
           "result": "ok",
-          "sha256": "b068f7a6c316eaa3",
+          "sha256": "8bb6a127c928d367",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/feed"
         },
         {
           "attempts": 1,
           "changed": true,
-          "chars": 2796,
+          "chars": 2790,
           "http_status": 200,
           "page": "shop",
           "result": "ok",
-          "sha256": "6c88b772bfbff8bd",
+          "sha256": "a1ce5f9302bcd9ff",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/yokohama"
         },
         {
           "attempts": 1,
-          "changed": false,
+          "changed": true,
           "chars": 1361,
           "http_status": 200,
           "page": "montbell-shop",
           "result": "ok",
-          "sha256": "b2fbd47f9a68bab1",
+          "sha256": "6f356c3131ef3284",
           "shop": "markis-minatomirai",
           "url": "https://www.mec-markis.jp/mm/shop/detail/?act=7918"
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 22053,
           "http_status": 200,
           "page": "news",
@@ -136,13 +136,13 @@
           "http_status": 200,
           "page": "top",
           "result": "ok",
-          "sha256": "12dae123a9210afb",
+          "sha256": "c34f78c5808506b3",
           "shop": "gregory",
           "url": "https://www.gregory.jp/"
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 9642,
           "http_status": 200,
           "page": "news",
@@ -152,7 +152,7 @@
           "url": "https://www.snowpeak.co.jp/news/"
         },
         {
-          "error": "Error: BrowserType.launch: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium_headless_shell-1254/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     playwright install                                     ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝",
+          "error": "Error: BrowserType.launch: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium_headless_shell-1255/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     playwright install                                     ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝",
           "page": "top",
           "rendered": true,
           "result": "error",
