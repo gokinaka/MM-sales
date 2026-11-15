@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-11-14T22:07:24+00:00",
+      "fetched_at": "2026-11-15T22:37:42+00:00",
       "results": [
         {
           "attempts": 1,
@@ -76,7 +76,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 12918,
           "http_status": 200,
           "page": "sale",
@@ -88,17 +88,17 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 2790,
+          "chars": 2778,
           "http_status": 200,
           "page": "shop",
           "result": "ok",
-          "sha256": "a1ce5f9302bcd9ff",
+          "sha256": "972b90bcb3f6055b",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/yokohama"
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 1361,
           "http_status": 200,
           "page": "montbell-shop",
@@ -136,7 +136,7 @@
           "http_status": 200,
           "page": "top",
           "result": "ok",
-          "sha256": "c34f78c5808506b3",
+          "sha256": "c01037bbe4f87e24",
           "shop": "gregory",
           "url": "https://www.gregory.jp/"
         },
