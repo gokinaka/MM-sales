@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-11-17T01:44:43+00:00",
+      "fetched_at": "2026-11-18T00:44:17+00:00",
       "results": [
         {
           "attempts": 1,
@@ -43,7 +43,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 6426,
           "http_status": 200,
           "page": "corporate",
@@ -77,22 +77,22 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 14049,
+          "chars": 14130,
           "http_status": 200,
           "page": "sale",
           "result": "ok",
-          "sha256": "cd4bf8a5f38feaf2",
+          "sha256": "e376fe0d0a77d09d",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/feed"
         },
         {
           "attempts": 1,
           "changed": true,
-          "chars": 2805,
+          "chars": 2856,
           "http_status": 200,
           "page": "shop",
           "result": "ok",
-          "sha256": "7a51dc71e03754c4",
+          "sha256": "764090c09717c681",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/yokohama"
         },
@@ -132,17 +132,17 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 7558,
+          "chars": 7542,
           "http_status": 200,
           "page": "top",
           "result": "ok",
-          "sha256": "7feb4bfc8f25f8d7",
+          "sha256": "12aa9fe383f91096",
           "shop": "gregory",
           "url": "https://www.gregory.jp/"
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 9640,
           "http_status": 200,
           "page": "news",
