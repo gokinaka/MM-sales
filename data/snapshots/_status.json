@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-11-18T00:44:17+00:00",
+      "fetched_at": "2026-11-19T00:01:41+00:00",
       "results": [
         {
           "attempts": 1,
@@ -76,7 +76,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 14130,
           "http_status": 200,
           "page": "sale",
@@ -87,7 +87,7 @@
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 2856,
           "http_status": 200,
           "page": "shop",
@@ -132,11 +132,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 7542,
+          "chars": 7534,
           "http_status": 200,
           "page": "top",
           "result": "ok",
-          "sha256": "12aa9fe383f91096",
+          "sha256": "6e5c8e41629ca216",
           "shop": "gregory",
           "url": "https://www.gregory.jp/"
         },
