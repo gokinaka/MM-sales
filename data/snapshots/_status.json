@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-11-20T00:24:45+00:00",
+      "fetched_at": "2026-11-20T23:47:28+00:00",
       "results": [
         {
           "attempts": 1,
@@ -44,11 +44,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 6420,
+          "chars": 6424,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "76298aa66cddaa85",
+          "sha256": "ba17556775cd7c43",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
@@ -76,34 +76,34 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 14130,
+          "changed": true,
+          "chars": 12843,
           "http_status": 200,
           "page": "sale",
           "result": "ok",
-          "sha256": "e376fe0d0a77d09d",
+          "sha256": "5f576c1e8c47ec0b",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/feed"
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 2856,
+          "changed": true,
+          "chars": 2884,
           "http_status": 200,
           "page": "shop",
           "result": "ok",
-          "sha256": "764090c09717c681",
+          "sha256": "21c5587497fb672d",
           "shop": "kamoshika-yokohama",
           "url": "https://kamoshika.co.jp/yokohama"
         },
         {
           "attempts": 1,
-          "changed": false,
+          "changed": true,
           "chars": 1361,
           "http_status": 200,
           "page": "montbell-shop",
           "result": "ok",
-          "sha256": "6f356c3131ef3284",
+          "sha256": "0ecd413cb271017a",
           "shop": "markis-minatomirai",
           "url": "https://www.mec-markis.jp/mm/shop/detail/?act=7918"
         },
@@ -132,17 +132,17 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 7573,
+          "chars": 7556,
           "http_status": 200,
           "page": "top",
           "result": "ok",
-          "sha256": "6145d55b5b81b60b",
+          "sha256": "fa6640880dbb28a6",
           "shop": "gregory",
           "url": "https://www.gregory.jp/"
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 9661,
           "http_status": 200,
           "page": "news",
