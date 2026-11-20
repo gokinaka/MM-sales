@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-11-19T00:01:41+00:00",
+      "fetched_at": "2026-11-20T00:24:45+00:00",
       "results": [
         {
           "attempts": 1,
@@ -43,12 +43,12 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 6426,
+          "changed": true,
+          "chars": 6420,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "f69d403f2a942020",
+          "sha256": "76298aa66cddaa85",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
@@ -132,22 +132,22 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 7534,
+          "chars": 7573,
           "http_status": 200,
           "page": "top",
           "result": "ok",
-          "sha256": "6e5c8e41629ca216",
+          "sha256": "6145d55b5b81b60b",
           "shop": "gregory",
           "url": "https://www.gregory.jp/"
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 9640,
+          "changed": true,
+          "chars": 9661,
           "http_status": 200,
           "page": "news",
           "result": "ok",
-          "sha256": "11d86cba547be22c",
+          "sha256": "c9a12380e3bac6d6",
           "shop": "snowpeak",
           "url": "https://www.snowpeak.co.jp/news/"
         },
