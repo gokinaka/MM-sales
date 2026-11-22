@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-11-21T22:54:49+00:00",
+      "fetched_at": "2026-11-22T23:24:46+00:00",
       "results": [
         {
           "attempts": 1,
@@ -43,12 +43,12 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 6424,
+          "changed": true,
+          "chars": 6409,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "ba17556775cd7c43",
+          "sha256": "ff1af5d84c213554",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
