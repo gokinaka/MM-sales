@@ -211,11 +211,11 @@ International customers are welcome — we also accept credit cards issued outsi
 ショルダーバッグ ユニセックス
 バッグ 20L以下
 ショルダーバッグ シンプル
-アウトドア ショルダーバッグ
 ショルダーバッグ ギフト
+アウトドア ショルダーバッグ
 ポーチ 20L以下
-ポーチ ユニセックス
 ユニセックス ギフト
+ポーチ ユニセックス
 ショルダーバッグ コーデュラバリスティックブラック
 Shop
 ランキング
@@ -259,7 +259,6 @@ CLASSIC TOTE
 ¥11,000
 (税込)
 4 colors
-GWP Coin Pouch
 AR Model
 クラシックデイ
 ファインデイDSP
@@ -292,7 +291,6 @@ SATCHEL S V2
 13 colors
 +8 more
 +9
-GWP Coin Pouch
 AR Model
 クラシックデイ
 デイパックDSP
@@ -328,7 +326,6 @@ COMPASS 40 RF
 ¥28,600
 (税込)
 3 colors
-GWP Coin Pouch
 Exclusive
 AR Model
 クラシックデイ
@@ -359,7 +356,6 @@ COMPASS 30 RF
 ¥26,400
 (税込)
 3 colors
-GWP Coin Pouch
 Exclusive
 AR Model
 クラシックデイ
@@ -434,7 +430,6 @@ EXCURSION DAY BAL.
 ¥27,720
 (税込)
 1 color
-GWP Coin Pouch
 AR Model
 クラシックデイ
 ファインデイ V2
@@ -444,7 +439,6 @@ FINE DAY V2
 25 colors
 +20 more
 +21
-GWP Coin Pouch
 AR Model
 CLASSIC DAY
 ファインデイ V2
@@ -452,7 +446,6 @@ FINE DAY V2 JPS
 ¥20,900
 (税込)
 1 color
-GWP Coin Pouch
 Exclusive
 AR Model
 クラシックデイ
@@ -528,6 +521,8 @@ QUICK POCKET L
 {{promotionCalloutMsg}}
 {{explanationHtml}}
 ニュース
+2026.11.25
+【CAMPAIGN】「ホリデー キャンペーン」開催！
 2026.11.16
 GREGORY史上初、日本製デイパック「DAYPACK JAPAN CRAFT」登場
 2026.11.12
@@ -594,7 +589,6 @@ PICK UP
 GREGORY & more
 PLAY ON THE EARTH
 こちらもおすすめ
-GWP Coin Pouch
 AR Model
 CLASSIC DAY
 ファインデイ V2
@@ -602,7 +596,6 @@ FINE DAY V2 JPS
 ¥20,900
 (税込)
 1 color
-GWP Coin Pouch
 Exclusive
 AR Model
 クラシックデイ

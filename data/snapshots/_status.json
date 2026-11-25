@@ -28,7 +28,7 @@
       ]
     },
     "runner": {
-      "fetched_at": "2026-11-24T03:54:16+00:00",
+      "fetched_at": "2026-11-25T02:01:16+00:00",
       "results": [
         {
           "attempts": 1,
@@ -44,11 +44,11 @@
         {
           "attempts": 1,
           "changed": true,
-          "chars": 6395,
+          "chars": 6398,
           "http_status": 200,
           "page": "corporate",
           "result": "ok",
-          "sha256": "3c07caa4d7a2282b",
+          "sha256": "0720d9f00bca1dc4",
           "shop": "kojitusanso-yokohama",
           "url": "https://www.kojitusanso.jp/"
         },
@@ -131,18 +131,18 @@
         },
         {
           "attempts": 1,
-          "changed": false,
-          "chars": 7556,
+          "changed": true,
+          "chars": 7459,
           "http_status": 200,
           "page": "top",
           "result": "ok",
-          "sha256": "fa6640880dbb28a6",
+          "sha256": "42155f8e4cca3c39",
           "shop": "gregory",
           "url": "https://www.gregory.jp/"
         },
         {
           "attempts": 1,
-          "changed": true,
+          "changed": false,
           "chars": 9646,
           "http_status": 200,
           "page": "news",
